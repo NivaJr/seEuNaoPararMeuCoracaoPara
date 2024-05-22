@@ -19,6 +19,7 @@ export default function Page() {
             <View>
                 <Text>teste 2</Text>
             </View>
+            //comentario
         }
         <Link href="./pages/home" asChild>
             <View>
