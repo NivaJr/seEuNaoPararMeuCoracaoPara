@@ -1,5 +1,9 @@
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 export default function Saude() {
-  return <Text>Saude</Text>;
+  return (
+    <View>
+      <Text>Saude</Text>
+    </View>
+  )
 }
