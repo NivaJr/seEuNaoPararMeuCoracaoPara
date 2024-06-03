@@ -126,7 +126,6 @@ const styles = StyleSheet.create({
         color: 'white',
         left:0,
         fontFamily: "BlackOpsOne_400Regular",
-        // backgroundColor:"red",
         flex:2,
         
     },
