@@ -1,13 +1,13 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 
 
-export default function LineSaude({title}){
+export default function LineTfm({title}){
   return(
     <TouchableOpacity style={styles.line}>
       <View style={styles.iconView}>
-        <AntDesign name="heart" size={25} color={'green'} style={styles.coracao}/>
+        <FontAwesome5  name="running" size={24} color={'green'} />      
       </View>
       <View style={styles.titleView}>
         <Text style={styles.topico}>
