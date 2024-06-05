@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     padding:10,
     flexDirection:"row",
     backgroundColor: 'black',
-    display: 'flex'
+    display: 'f'
   },
   header: {
     backgroundColor: 'green',
@@ -56,8 +56,6 @@ const styles = StyleSheet.create({
     fontFamily:'BlackOpsOne_400Regular',
     flexShrink: 1,
     flexDirection: 'column',
-    position:'relative',
-    left:10
     
   },
   iconView: {
@@ -65,5 +63,6 @@ const styles = StyleSheet.create({
   },
   titleView: {
     display: 'flex',
+    flexShrink: 1
   }
 })
