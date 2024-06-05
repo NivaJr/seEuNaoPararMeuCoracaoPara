@@ -1,20 +1,22 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Pressable, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { AntDesign } from '@expo/vector-icons';
+import { Link } from "expo-router"
 
 
-
-export default function LineSaude({title}){
+export default function LineSaude({title, link}){
   return(
-    <TouchableOpacity style={styles.line}>
-      <View style={styles.iconView}>
-        <AntDesign name="heart" size={25} color={'green'} style={styles.coracao}/>
-      </View>
-      <View style={styles.titleView}>
-        <Text style={styles.topico}>
-          {title}
-        </Text>
-      </View>
-    </TouchableOpacity>
+    <Link href={link} asChild>
+        <TouchableOpacity style={styles.line}>
+          <View style={styles.iconView}>
+            <AntDesign name="heart" size={25} color={'green'} style={styles.coracao}/>
+          </View>
+          <View style={styles.titleView}>
+            <Text style={styles.topico}>
+              {title}
+            </Text>
+          </View>
+        </TouchableOpacity>
+    </Link>
   )
 }
 

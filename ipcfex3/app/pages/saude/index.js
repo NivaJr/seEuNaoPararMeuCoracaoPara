@@ -17,10 +17,10 @@ export default function Saude() {
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
-          <LineSaude title='Avaliação da Composição Corporal'/>
-          <LineSaude title='Identificação de Fatores de Risco de Síndrome Metabólica'/>
-          <LineSaude title='Verificação de Pressão Arterial'/>
-          <LineSaude title='Desenvolvimento de Diabete Melitus II'/>
+          <LineSaude title='Avaliação da Composição Corporal' link="pages/saude/item/Saude-1"/>
+          <LineSaude title='Identificação de Fatores de Risco de Síndrome Metabólica' link="pages/saude/item/Saude-1"/>
+          <LineSaude title='Verificação de Pressão Arterial' link="pages/saude/item/Saude-1"/>
+          <LineSaude title='Desenvolvimento de Diabete Melitus II' link="pages/saude/item/Saude-1"/>
         </View>
       </View>
 
