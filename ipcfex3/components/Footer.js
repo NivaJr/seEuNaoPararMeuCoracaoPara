@@ -89,7 +89,7 @@ export default function Footer({page}){
 const styles = StyleSheet.create({
     bottom: {
         backgroundColor: 'red',
-        position: 'absolute',
+        position: 'relative',
         bottom: 0,
         left: 0,
         right: 0,

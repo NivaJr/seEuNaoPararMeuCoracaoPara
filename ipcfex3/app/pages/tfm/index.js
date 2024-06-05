@@ -11,7 +11,7 @@ import LineLink from '../../../components/LineLink';
 export default function Saude() {
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
+      <StatusBar hidden={true} />
 
       <HeaderSecundario title='TFM'/>
 

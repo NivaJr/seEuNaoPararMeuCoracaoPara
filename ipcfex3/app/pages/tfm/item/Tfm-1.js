@@ -1,4 +1,4 @@
-import { Modal, ScrollView, StyleSheet, Text, TouchableHighlight, View } from "react-native";
+import { Modal, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, View } from "react-native";
 import HeaderTerciario from "../../../../components/HeaderTerciario";
 import Footer from "../../../../components/Footer";
 import LineLink from "../../../../components/LineLink";
@@ -11,6 +11,7 @@ export default function Page() {
   return(
     <View style={styles.container}>
       <HeaderTerciario title='Sessão de TFM'/>
+      <StatusBar hidden={true}/>
       <ScrollView>
         <Modal
           animationType="slide"

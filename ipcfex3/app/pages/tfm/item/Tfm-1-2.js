@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity, StatusBar } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Colors } from '../../../../constants/Colors';
 import LineLink from '../../../../components/LineLink';
@@ -9,6 +9,7 @@ import Footer from '../../../../components/Footer';
 export default function Tfm8_2({ navigation }) {
     return (
       <View style={styles.container}>
+        <StatusBar hidden={true}/>
         <HeaderTerciario title='Fase de Aquecimento em Movimento'/>
         <ScrollView style={{flex:1}}>
           <View style={styles.div}>
