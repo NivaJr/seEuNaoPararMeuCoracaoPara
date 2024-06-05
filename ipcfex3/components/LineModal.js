@@ -1,13 +1,11 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { FontAwesome5, AntDesign } from '@expo/vector-icons';
-import { Link } from "expo-router";
 
 
 
-export default function LineLink({title, link, icon}){
+export default function LineModal({title, setModalVisible, icon}){
   return(
-    <Link href={`pages/tfm/item/${link}`} onPress={() => {console.log(link)}} asChild>
-      <TouchableOpacity style={styles.line}>
+      <TouchableOpacity style={styles.line} onPress={() => setModalVisible(true)}>
         <View style={styles.iconView}>
           {
             icon === 'tfm' &&
@@ -24,7 +22,6 @@ export default function LineLink({title, link, icon}){
           </Text>
         </View>
       </TouchableOpacity>
-    </Link>
   )
 }
 
@@ -34,9 +31,7 @@ const styles = StyleSheet.create({
     height:'auto',
     width:"100%",
     padding:10,
-    flexDirection:"row",
-    backgroundColor: 'black',
-    display: 'flex'
+    flexDirection:"row"
   },
   header: {
     backgroundColor: 'green',
@@ -55,9 +50,6 @@ const styles = StyleSheet.create({
     color:'green',
     fontFamily:'BlackOpsOne_400Regular',
     flexShrink: 1,
-    flexDirection: 'column',
-    position:'relative',
-    left:10
     
   },
   iconView: {
