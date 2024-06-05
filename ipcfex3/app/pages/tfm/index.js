@@ -2,7 +2,7 @@ import { Text,  View, Image, Modal, StyleSheet, StatusBar } from 'react-native';
 import React, {useState} from 'react';
 import Footer from '../../../components/Footer';
 import HeaderSecundario from '../../../components/HeaderSecundario';
-import LineTfm from '../../../components/LineTfm';
+import LineLink from '../../../components/LineLink';
 
 
 
@@ -17,14 +17,14 @@ export default function Saude() {
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
-          <LineTfm title='Sessão de TFM'/>
-          <LineTfm title='Controle da Carga do Exercício Aeróbio'/>
-          <LineTfm title='Treinamento de Aptidão Cardiorespiratória'/>
-          <LineTfm title='Treinamento de Aptidão Muscular'/>
-          <LineTfm title='Treinamento Utilitário'/>
-          <LineTfm title='Sessão de Exercícios de Alongamento'/>
-          <LineTfm title='Programa Anual de TFM'/>
-          <LineTfm title='Teste de Avaliação Física'/>
+          <LineLink title='Sessão de TFM' link='Tfm-1' icon='tfm'/>
+          <LineLink title='Controle da Carga do Exercício Aeróbio' link='Tfm-2'  icon='tfm'/>
+          <LineLink title='Treinamento de Aptidão Cardiorespiratória' link='Tfm-3' icon='tfm'/>
+          <LineLink title='Treinamento de Aptidão Muscular' link='Tfm-4' icon='tfm'/>
+          <LineLink title='Treinamento Utilitário' link='Tfm-5' icon='tfm'/>
+          <LineLink title='Sessão de Exercícios de Alongamento' link='Tfm-6' icon='tfm'/>
+          <LineLink title='Programa Anual de TFM' link='Tfm-7' icon='tfm'/>
+          <LineLink title='Teste de Avaliação Física' link='Tfm-8' icon='tfm'/>
         </View>
       </View>
 
