@@ -2,7 +2,7 @@ import { Text,  View, Image, Modal, StyleSheet, StatusBar } from 'react-native';
 import React, {useState} from 'react';
 import Footer from '../../../components/Footer';
 import HeaderSecundario from '../../../components/HeaderSecundario';
-import LineSaude from '../../../components/LineSaude';
+import LineTfm from '../../../components/LineTfm';
 
 
 
@@ -17,10 +17,14 @@ export default function Saude() {
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
-          <LineSaude title='Avaliação da Composição Corporal'/>
-          <LineSaude title='Identificação de Fatores de Risco de Síndrome Metabólica'/>
-          <LineSaude title='Verificação de Pressão Arterial'/>
-          <LineSaude title='Desenvolvimento de Diabete Melitus II'/>
+          <LineTfm title='Sessão de TFM'/>
+          <LineTfm title='Controle da Carga do Exercício Aeróbio'/>
+          <LineTfm title='Treinamento de Aptidão Cardiorespiratória'/>
+          <LineTfm title='Treinamento de Aptidão Muscular'/>
+          <LineTfm title='Treinamento Utilitário'/>
+          <LineTfm title='Sessão de Exercícios de Alongamento'/>
+          <LineTfm title='Programa Anual de TFM'/>
+          <LineTfm title='Teste de Avaliação Física'/>
         </View>
       </View>
 

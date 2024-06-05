@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     
   },
   iconView: {
+    paddingRight: '3%'
   },
   titleView: {
     display: 'flex',
