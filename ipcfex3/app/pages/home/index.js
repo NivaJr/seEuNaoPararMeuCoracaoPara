@@ -1,4 +1,3 @@
-import { Slot } from 'expo-router';
 import { View, StyleSheet, ImageBackground, Image } from 'react-native';
 
 export default function Home() {
@@ -35,5 +34,5 @@ const style = StyleSheet.create({
     position:'absolute',
     right:5,
     bottom:5
-  }
+  },
 });
