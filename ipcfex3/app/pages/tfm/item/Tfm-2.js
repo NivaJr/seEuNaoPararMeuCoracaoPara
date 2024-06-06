@@ -7,7 +7,7 @@ import HeaderTerciario from '../../../../components/HeaderTerciario';
 import LineModal from '../../../../components/LineModal';
 import LineLink from '../../../../components/LineLink';
 
-export default function Tfm1({ navigation }) {
+export default function Tfm2() {
   const [modalVisible, setModalVisible] = useState(false);
           return (
             <View style={styles.container}>

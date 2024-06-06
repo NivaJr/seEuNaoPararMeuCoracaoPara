@@ -5,7 +5,7 @@ import LineLink from '../../../../components/LineLink';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm8_2({ navigation }) {
+export default function Tfm1_2({ navigation }) {
     return (
       <View style={styles.container}>
         <StatusBar hidden={true}/>

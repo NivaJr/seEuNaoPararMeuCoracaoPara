@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, ScrollView, Modal, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, ScrollView,Modal, StatusBar } from 'react-native';
 import { Colors } from '../../../../constants/Colors';
+import { FontAwesome5 } from '@expo/vector-icons';
+import HeaderTerciario from '../../../../components/HeaderTerciario';
+import Footer from '../../../../components/Footer';
 import LineModal from '../../../../components/LineModal';
 import LineLink from '../../../../components/LineLink';
-import Footer from '../../../../components/Footer';
-import HeaderTerciario from '../../../../components/HeaderTerciario';
 
-export default function Tfm3({ }) {
+export default function Tfm5({}) {
   const [modalVisible, setModalVisible] = useState(false);
         return (
           <View style={styles.container}>
             <StatusBar hidden={true}/>
-            <HeaderTerciario title='Controle de Carga do Exercício Aeróbio' pai='tfm'/>
-            <ScrollView >
+            <HeaderTerciario title='Treinamento Utilitário' pai='tfm'/>
+            <ScrollView>
               <Modal
                 animationType="slide"
                 transparent={true}
@@ -22,7 +23,7 @@ export default function Tfm3({ }) {
                   <View style={styles.modalView}>
                     <ScrollView>
                       <Text style={{...styles.modalText}}>SOBRE{"\n"}</Text>
-                      <Text>Treinamento da Aptidão Cardiorrespiratória (ACR) é o conjunto de exercícios físicos planejados, estruturados, repetitivos e controlados, que tem por objetivo o desenvolvimento ou a manutenção da referida aptidão. Os métodos de treinamento da ACR previstos nos programas anuais de TFM são a corrida contínua, o treinamento intervalado de alta intensidade (TIAI) e o cross operacional.</Text>
+                      <Text>O treinamento utilitário caracteriza-se por atividades físicas que auxiliam no aprimoramento e na manutenção da eficiência dos sistemas cardiopulmonar e neuromuscular, além de desenvolver conteúdos atitudinais necessários ao militar. É um método que deve ser praticado por todos os militares com atenção às condições de segurança e as devidas adaptações para o sexo feminino.{'\n'}</Text>
                       </ScrollView>
 
                     <TouchableHighlight
@@ -39,14 +40,15 @@ export default function Tfm3({ }) {
               <View style={styles.middle}>
                 <View style={styles.middleContent}>
                   <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
-                  <LineLink title='Corrida Contínua' link='Tfm-3-2' icon='tfm'/>
-                  <LineLink title='Treinamento Intervalado 400M' link='Tfm-3-3' icon='tfm'/>
-                  <LineLink title='Treinamento Rústico Operacional' link='Tfm-3-4' icon='tfm'/>
+                  <LineLink title='Ginástica com Toro' link='Tfm-4-2' icon='tfm'/>
+                  <LineLink title='Circuito Operacional' link='Tfm-4-3' icon='tfm'/>
+                  <LineLink title='Ginástica com Armas' link='Tfm-4-4' icon='tfm'/>
+                  <LineLink title='Pista de Obstáculos' link='Tfm-4-5' icon='tfm'/>
                 </View>
               </View>
-              </ScrollView>
-              <Footer page='tfm' /> 
-            </View>
+            </ScrollView>
+            <Footer page='tfm' />
+          </View>
       ); 
 }
 

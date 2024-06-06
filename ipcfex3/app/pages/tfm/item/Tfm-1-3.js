@@ -50,7 +50,7 @@ import fig418g from '../../../../assets/images/fig4-18-g.png';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm8_3() {
+export default function Tfm1_3() {
   function Div1(){
     const [modalVisible, setModalVisible] = useState(false);
     const [conteudo, setConteudo] = useState(0);

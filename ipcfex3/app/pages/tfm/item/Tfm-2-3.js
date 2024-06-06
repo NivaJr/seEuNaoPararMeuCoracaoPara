@@ -7,7 +7,7 @@ import Slider from '@react-native-community/slider';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm1_3() {
+export default function Tfm2_3() {
   const [FC, setFC] = useState(50);
   function aumentarFC(value){
     if(value<220){

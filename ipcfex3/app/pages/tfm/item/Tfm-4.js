@@ -35,7 +35,7 @@ export default function Tfm3({ navigation }) {
                       <Text style={styles.textStyle}>VOLTAR</Text>
                     </TouchableHighlight>
                   </View>
-                </View>
+                </View>s
               </Modal>
               <View style={styles.middle}>
                 <View style={styles.middleContent}>
