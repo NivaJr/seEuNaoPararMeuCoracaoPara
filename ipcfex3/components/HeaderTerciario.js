@@ -1,16 +1,21 @@
-import { StyleSheet, View, Text} from 'react-native';
+import { StyleSheet, View, Text,  Pressable} from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import {Colors} from '../constants/Colors'
+import { Link } from 'expo-router';
 
-export default function HeaderTerciario({title}){
+export default function HeaderTerciario({title, pai}){
 
   return(
     <View style={styles.header}>
-      <View style={styles.headerIconView}>
-        <AntDesign name="arrowleft" size={24} color="#FFFFFF" />
-      </View>
+      <Link href={`pages/${pai}`} asChild>
+        <Pressable style={styles.headerIconView}>
+          <View>
+            <AntDesign name="arrowleft" size={24} color="#FFFFFF" />
+          </View>
+        </Pressable>
+      </Link>
       <View style={styles.viewTextHeader}>
-        <Text style={styles.textHeader}>{title}</Text>
+        <Text ellipsizeMode='tail' numberOfLines={1} style={styles.textHeader}>{title}</Text>
       </View>
     </View>
   )
@@ -32,12 +37,15 @@ const styles = StyleSheet.create({
     fontFamily: 'BlackOpsOne_400Regular',
     fontSize: 22,
     color: 'white',
+    overflow: 'hidden',
+    
   },
   viewTextHeader: {
     display: 'flex',
     justifyContent: 'center',
     backgroundColor: Colors.VerdeEscuro,
-    flex: 5
+    flex: 5,
+    paddingRight: '5%',
   },
   headerIconView: {
     flex: 1,

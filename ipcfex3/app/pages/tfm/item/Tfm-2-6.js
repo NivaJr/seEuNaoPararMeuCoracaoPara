@@ -1,28 +1,51 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
-import { Colors } from '../../../../constants/Colors';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Slider from '@react-native-community/slider';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm2_4() {
-  const [f, setF] = useState(20);
+export default function Tfm1_6() {
+  const [FCalvo, setFCalvo] = useState(30);
   const [FCmax, setFCmax] = useState(20);
+  const [FCR, setFCR] = useState(30);
+  console.log(FCalvo);
+  console.log(FCmax);
+  console.log(FCR);
   console.disableYellowBox = true;
   function aumentarFCmax(value){
     if(value<100){
-      setFCmax(value => value + 1);
+      setFCmax(value => value + 1)
     }
   }
   function diminuirFCmax(value){
     if(value>0){
-      setFCmax(value => value - 1);
+      setFCmax(value => value - 1)
     }
   }
-  function Div3(){
+  function aumentarFCR(value){
+    if(value<220){
+      setFCR(value => value + 1)
+    }
+  }
+  function diminuirFCR(value){
+    if(value>0){
+      setFCR(value => value - 1)
+    }
+  }
+  function aumentarFCalvo(value){
+    if(value<100){
+      setFCalvo(value => value + 1)
+    }
+  }
+  function diminuirFCalvo(value){
+    if(value>0){
+      setFCalvo(value => value - 1)
+    }
+  }
+  function Div5(){
     const [collapseVisible, setCollapseVisible] = useState(false);
-      
       if(collapseVisible==false){
         return(
             <View
@@ -37,7 +60,7 @@ export default function Tfm2_4() {
       }else{
         return(
           <View>
-            <Text style={{color:'black', borderTopWidth:1.5, borderColor:'gray', paddingTop:25, marginTop:25, textAlign:'center', fontSize:22}}>FCMax = {f} bpm</Text>
+            <Text style={{color:'black', borderTopWidth:1.5, borderColor:'gray', paddingTop:25, marginTop:25, textAlign:'center', fontSize:22}}>FCalvo = {((220-FCmax-FCR)*(FCalvo/100)+FCR).toFixed(1)} bpm</Text>
             <View
                   style={{ ...styles.openButton, backgroundColor: Colors.VerdeEscuro, borderWidth:1, width:190, alignSelf:'center' }}
                   onTouchEnd={() => {
@@ -53,15 +76,19 @@ export default function Tfm2_4() {
     return (
         <View style={styles.container}>
           <StatusBar hidden={true} />
-          <HeaderTerciario title='Cálculo da Frequência Cardíaca Máxima' pai='tfm/item/Tfm-2' />
+          <HeaderTerciario title='Cálculo da Frequência Cardíaca de Repouso' pai='tfm/item/Tfm-2'/>
           <ScrollView style={{flex:1}}>
             <View style={styles.div}>
-                  <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10}}>CÁLCULO DA FREQUÊNCIA CARDÍACA MÁXIMA</Text>
-                  <Text>A FC máxima (FCMáx) serve como um índice de referência do controle do exercício, por meio de valores percentuais ou compondo outro indicador (FC de reserva).{'\n\n'}FCMáx = 208 – (0,7 x idade){'\n\n'}FCMáx = 220 –idade, cuja autoria é desconhecida.
+                  <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10}}>CÁLCULO DA FREQUÊNCIA CARDÍACA DE REPOUSO</Text>
+                  <Text>FCRep (frequência cardíaca de repouso) = medida após 5 minutos de repouso sentado, em local silencioso, antes de realizar atividade física.{'\n\n'}Exemplo: Um militar deseja realizar uma corrida contínua, utilizando 75% de sua FCR, e apresentou, na ocasião, os seguintes dados: idade = 30 anos; FCRep = 60 bpm.{'\n\n'}Dessa forma, ele deverá realizá-la a:
+                  {'\n'}FC alvo = FCR x  % intensidade desejada  +  FCRep{'\n'}
+                  FC alvo = [(220 – 30) – 60] x 0,75 + 60{'\n'}
+                  FC alvo = 157,5 bpm
+    
                   </Text>
                   <Text style={{textAlign:'center', fontWeight:'bold', fontSize:18}}>{'\n'}Idade{'\n'}{'\n'}{FCmax}</Text>
                   <View style={{flex:1, flexDirection:'row', alignSelf:'center'}}>
-                    <AntDesign onPress={()=>{diminuirFCmax(FCmax);setF(220-FCmax);}} name="minus" size={25} color="black" />
+                    <AntDesign onPress={()=>diminuirFCmax(FCmax)} name="minus" size={25} color="black" />
                     <Slider
                       style={{width: '65%', height: 27, marginRight:10, marginLeft:10}}
                       minimumValue={0}
@@ -69,16 +96,46 @@ export default function Tfm2_4() {
                       value={FCmax}
                       minimumTrackTintColor="#000000"
                       maximumTrackTintColor="#FFFFFF"
-                      onValueChange={value => {setFCmax(value);setF(220-FCmax);}}
+                      onValueChange={value => setFCmax(value)}
                       step={1}
                     />
-                    <AntDesign onPress={()=>{aumentarFCmax(FCmax);setF(220-FCmax);}} name="plus" size={25} color="black" />
+                    <AntDesign onPress={()=>aumentarFCmax(FCmax)} name="plus" size={25} color="black" />
+                  </View>
+                  <Text style={{textAlign:'center', fontWeight:'bold', fontSize:18}}>{'\n'}FCRep{'\n'}{'\n'}{FCR} bpm</Text>
+                  <View style={{flex:1, flexDirection:'row', alignSelf:'center'}}>
+                    <AntDesign onPress={()=>diminuirFCR(FCR)} name="minus" size={25} color="black" />
+                    <Slider
+                      style={{width: '65%', height: 27, marginRight:10, marginLeft:10}}
+                      minimumValue={0}
+                      maximumValue={220}
+                      value={FCR}
+                      minimumTrackTintColor="#000000"
+                      maximumTrackTintColor="#FFFFFF"
+                      onValueChange={value => setFCR(value)}
+                      step={1}
+                    />
+                    <AntDesign onPress={()=>aumentarFCR(FCR)} name="plus" size={25} color="black" />
+                  </View>
+                  <Text style={{textAlign:'center', fontWeight:'bold', fontSize:18}}>{'\n'}Intensidade desejada{'\n'}{'\n'}{FCalvo}%</Text>
+                  <View style={{flex:1, flexDirection:'row', alignSelf:'center'}}>
+                    <AntDesign onPress={()=>diminuirFCalvo(FCalvo)} name="minus" size={25} color="black" />
+                    <Slider
+                      style={{width: '65%', height: 27, marginRight:10, marginLeft:10}}
+                      minimumValue={0}
+                      maximumValue={100}
+                      value={FCalvo}
+                      minimumTrackTintColor="#000000"
+                      maximumTrackTintColor="#FFFFFF"
+                      onValueChange={value => setFCalvo(value)}
+                      step={1}
+                    />
+                    <AntDesign onPress={()=>aumentarFCalvo(FCalvo)} name="plus" size={25} color="black" />
                   </View>
                   {
-                    Div3()
+                    Div5()
                   }
                   </View>
-              <View style={{height:180}}></View>
+              <View style={{height:100}}></View>
             </ScrollView>
             <Footer page='tfm' />
         </View>
@@ -96,8 +153,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 1,
-    margin:15,
     backgroundColor:'white',
+    margin:15,
     padding:15
   },
   container: {

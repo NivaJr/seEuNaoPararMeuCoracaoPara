@@ -10,7 +10,7 @@ export default function Page() {
   const [modalVisible, setModalVisible] = useState(false);
   return(
     <View style={styles.container}>
-      <HeaderTerciario title='Sessão de TFM'/>
+      <HeaderTerciario title='Sessão de TFM' pai='tfm'/>
       <StatusBar hidden={true}/>
       <ScrollView>
         <Modal

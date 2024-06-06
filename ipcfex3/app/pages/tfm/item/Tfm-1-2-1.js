@@ -345,7 +345,7 @@ quadris (Fig 4-9.a a 4-9.f).{'\n'}</Text>
   return (
     <View style={styles.container}>
       <StatusBar hidden={true}/>
-      <HeaderTerciario title='Aquecimento Dinâmico'/>
+      <HeaderTerciario title='Aquecimento Dinâmico' pai='tfm/item/Tfm-1-2'/>
       <ScrollView style={{ flex: 1 }}>
         <View style={styles.div}>
           <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>AQUECIMENTO DINÂMICO</Text>

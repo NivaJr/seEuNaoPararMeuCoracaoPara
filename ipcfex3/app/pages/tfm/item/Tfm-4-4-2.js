@@ -5,16 +5,16 @@ import { Colors } from '../../../../constants/Colors';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm3_3() {
+export default function Tfm3_4_2() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
-      <HeaderTerciario title='Treinamento em Circuito' pai='tfm/item/Tfm-4' />
+      <HeaderTerciario title='Pentágono A' pai='tfm/item/Tfm-4-4' />
       <ScrollView style={{ flex: 1 }}>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>PISTA DE TREINAMENTO EM CIRCUITO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>PENTÁGONO A</Text>
           <Video
-            source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/tfm-sa.appspot.com/o/video11.mp4?alt=media&token=57ebbf06-f188-44a8-8ed9-0dace0cbe6bc' }}
+            source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/tfm-sa.appspot.com/o/video3.mp4?alt=media&token=b3b0b0d1-bcab-4af4-bbdd-b3403a1769d0' }}
             resizeMode="contain"
             shouldPlay
             useNativeControls
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
   video: {
     alignSelf: 'center',
-    width: 320,
+    width: 280,
     height: 200,
   },
   bt: {

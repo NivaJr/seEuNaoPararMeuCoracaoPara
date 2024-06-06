@@ -17,6 +17,7 @@
   "dependencies": {
     "@expo-google-fonts/black-ops-one": "^0.2.3",
     "@expo/vector-icons": "^14.0.0",
+    "@react-native-community/slider": "^4.5.2",
     "@react-navigation/native": "^6.0.2",
     "expo": "~51.0.8",
     "expo-av": "~14.0.5",

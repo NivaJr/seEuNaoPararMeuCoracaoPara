@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, StatusBar } from 'react-native';
-import { FontAwesome5 } from '@expo/vector-icons';
 import { Colors } from '../../../../constants/Colors';
 import LineLink from '../../../../components/LineLink';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
@@ -10,7 +9,7 @@ export default function Tfm8_2({ navigation }) {
     return (
       <View style={styles.container}>
         <StatusBar hidden={true}/>
-        <HeaderTerciario title='Fase de Aquecimento em Movimento'/>
+        <HeaderTerciario title='Fase de Aquecimento em Movimento' pai='tfm/item/Tfm-1'/>
         <ScrollView style={{flex:1}}>
           <View style={styles.div}>
             <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10}}>FASE DE AQUECIMENTO EM MOVIMENTO</Text>
