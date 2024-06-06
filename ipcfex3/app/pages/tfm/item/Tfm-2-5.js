@@ -6,7 +6,7 @@ import Slider from '@react-native-community/slider';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm1_5() {
+export default function Tfm2_5() {
   const [f, setF] = useState(20);
   const [FCmax, setFCmax] = useState(20);
   const [FCR, setFCR] = useState(30);

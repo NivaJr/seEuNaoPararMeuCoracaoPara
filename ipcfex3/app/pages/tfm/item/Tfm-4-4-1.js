@@ -4,7 +4,7 @@ import { Video } from 'expo-av';
 import { Colors } from '../../../../constants/Colors';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
-export default function Tfm3_4_1() {
+export default function Tfm4_4_1() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />

@@ -7,7 +7,7 @@ import Figura3 from '../../../../assets/images/figura3.png';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm1_2() {
+export default function Tfm2_2() {
   function Div1(){
     const [modalVisible, setModalVisible] = useState(false);
     const [conteudo, setConteudo] = useState(0);

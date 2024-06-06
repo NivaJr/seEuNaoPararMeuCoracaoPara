@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, ScrollView,Modal, StatusBar } from 'react-native';
 import { Colors } from '../../../../constants/Colors';
+import { FontAwesome5 } from '@expo/vector-icons';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 import LineModal from '../../../../components/LineModal';
 import LineLink from '../../../../components/LineLink';
 
-export default function Tfm7({ navigation }) {
+export default function Tfm5({}) {
   const [modalVisible, setModalVisible] = useState(false);
         return (
           <View style={styles.container}>
             <StatusBar hidden={true}/>
-            <HeaderTerciario title='Programa Anual de TFM' pai='tfm'/>
+            <HeaderTerciario title='Treinamento Utilitário' pai='tfm'/>
             <ScrollView>
               <Modal
                 animationType="slide"
@@ -22,8 +23,7 @@ export default function Tfm7({ navigation }) {
                   <View style={styles.modalView}>
                     <ScrollView>
                       <Text style={{...styles.modalText}}>SOBRE{"\n"}</Text>
-                      <Text>Os programas de TFM são esquemas simplificados que orientam o planejamento do TFM ao longo do ano de instrução. Cada programa contém o planejamento da distribuição dos métodos de treinamento previstos para todas as semanas do ano. Baseado nos programas de TFM, o S/3, assessorado pelo OTFM e considerando as instalações e o material existente na OM para a prática das atividades físicas, planejará a distribuição das sessões destinadas ao TFM em cada semana.{'\n'}</Text>
-                <Text>Na confecção do QTS, o S/3 pode alterar a ordem das atividades semanais existentes nos programas anuais de TFM. Pode inverter tanto a ordem das sessões como a sequência das atividades contidas em uma mesma sessão, caso esta seja mista.{'\n'}</Text>
+                      <Text>O treinamento utilitário caracteriza-se por atividades físicas que auxiliam no aprimoramento e na manutenção da eficiência dos sistemas cardiopulmonar e neuromuscular, além de desenvolver conteúdos atitudinais necessários ao militar. É um método que deve ser praticado por todos os militares com atenção às condições de segurança e as devidas adaptações para o sexo feminino.{'\n'}</Text>
                       </ScrollView>
 
                     <TouchableHighlight
@@ -38,16 +38,18 @@ export default function Tfm7({ navigation }) {
                 </View>
               </Modal>
               <View style={styles.middle}>
-              <View style={styles.middleContent}>
+                <View style={styles.middleContent}>
                   <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
-                  <LineLink title='4 Sessões' link='Tfm-7-2' icon='tfm'/>
-                  <LineLink title='5 Sessões' link='Tfm-7-3' icon='tfm'/>
+                  <LineLink title='Ginástica com Toro' link='Tfm-5-2' icon='tfm'/>
+                  <LineLink title='Circuito Operacional' link='Tfm-5-3' icon='tfm'/>
+                  <LineLink title='Ginástica com Armas' link='Tfm-5-4' icon='tfm'/>
+                  <LineLink title='Pista de Obstáculos' link='Tfm-5-5' icon='tfm'/>
                 </View>
               </View>
             </ScrollView>
             <Footer page='tfm' />
           </View>
-      );
+      ); 
 }
 
 const styles = StyleSheet.create({

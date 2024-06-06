@@ -30,7 +30,7 @@ import fig433b from '../../../../assets/images/fig4-33-b.png';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm8_5() {
+export default function Tfm1_5() {
   function Div1(){
     const [modalVisible, setModalVisible] = useState(false);
     const [conteudo, setConteudo] = useState(0);

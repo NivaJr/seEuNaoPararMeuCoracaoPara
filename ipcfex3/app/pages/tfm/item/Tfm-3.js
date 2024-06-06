@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, ScrollView, Modal, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, TouchableHighlight, ScrollView, Modal, StatusBar } from 'react-native';
 import { Colors } from '../../../../constants/Colors';
-import { FontAwesome5 } from '@expo/vector-icons';
 import LineModal from '../../../../components/LineModal';
 import LineLink from '../../../../components/LineLink';
 import Footer from '../../../../components/Footer';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 
-export default function Tfm2({ navigation }) {
+export default function Tfm3({ }) {
   const [modalVisible, setModalVisible] = useState(false);
         return (
           <View style={styles.container}>

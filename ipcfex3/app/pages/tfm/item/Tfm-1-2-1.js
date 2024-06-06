@@ -47,7 +47,7 @@ import fig49f from '../../../../assets/images/fig4-9-f.png';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm8_2_1() {
+export default function Tfm1_2_1() {
   function Div1() {
     const [modalVisible, setModalVisible] = useState(false);
     const [conteudo, setConteudo] = useState(0);

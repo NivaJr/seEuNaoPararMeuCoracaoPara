@@ -5,7 +5,7 @@ import { Colors } from '../../../../constants/Colors';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm3_3() {
+export default function Tfm4_3() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />

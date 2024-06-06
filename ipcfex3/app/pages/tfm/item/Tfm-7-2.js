@@ -1,22 +1,44 @@
-
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Colors } from '../../../../constants/Colors';
 import Slider from '@react-native-community/slider';
-import HeaderTerciario from '../../../../components/HeaderTerciario';
+import c from './Tabela-3';
 import Footer from '../../../../components/Footer';
+import HeaderTerciario from '../../../../components/HeaderTerciario';
 
-export default function Tfm2_3() {
-  const [FC, setFC] = useState(50);
+export default function Tfm6_2() {
+  const [FC, setFC] = useState(1);
+  console.disableYellowBox = true;
   function aumentarFC(value){
-    if(value<220){
+    if(value<51){
       setFC(value => value + 1)
     }
   }
   function diminuirFC(value){
-    if(value>0){
+    if(value>1){
       setFC(value => value - 1)
+    }
+  }
+  function semana(){
+    for(let i=0;i<c.length;i++){
+      if(FC==c[i].semana){
+        return(
+          <View>
+            <Text style={{color:'black', paddingTop:25, marginTop:25, textAlign:'center', fontSize:23}}>{c[i].nome}</Text>
+            {
+              c[i].treino.map(function(val,k){
+                return(
+                  <View>
+                    <Text style={{color:'black', paddingTop:25, marginTop:25, textAlign:'center', fontSize:23, textDecorationLine:'underline'}}>SESSÃO {++k}</Text>
+                    <Text style={{color:'black', paddingTop:5, marginTop:5, textAlign:'center', fontSize:23}}>{val}</Text>
+                  </View>
+                )
+              })
+            }
+          </View>
+        );
+      }
     }
   }
   function Div2(){
@@ -35,7 +57,9 @@ export default function Tfm2_3() {
       }else{
         return(
           <View>
-            <Text style={{color:'black', borderTopWidth:1.5, borderColor:'gray', paddingTop:25, marginTop:25, textAlign:'center', fontSize:22}}>FC = {FC*4} bpm</Text>
+            {
+                semana()
+            }
             <View
                   style={{ ...styles.openButton, backgroundColor: Colors.VerdeEscuro, borderWidth:1, width:190, alignSelf:'center' }}
                   onTouchEnd={() => {
@@ -51,19 +75,17 @@ export default function Tfm2_3() {
     return (
         <View style={styles.container}>
           <StatusBar hidden={true} />
-          <HeaderTerciario title='Cálculo da Frequência Cardíaca de Esforço' pai='tfm/item/Tfm-2' />
-          <ScrollView style={{flex:1}}>
+          <HeaderTerciario title='4 Sessões' pai='tfm/item/Tfm-7' />
+          <ScrollView style={{flex:1}}>     
             <View style={styles.div}>
-                  <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10}}>CÁLCULO DA FREQUÊNCIA CARDÍACA DE ESFORÇO</Text>
-                  <Text>Para se obter uma medida aproximada da FC de esforço em um dado minuto, é recomendado utilizar o tempo de 15s para contar o número de batimentos e multiplicar esse número por quatro.{'\n\n'}Exemplo: nº de batimentos em 15s = 36; FC = 36 x 4 = 144 bpm.
-                  </Text>
-                  <Text style={{textAlign:'center', fontWeight:'bold', fontSize:18}}>{'\n'}Número de batimentos em 15s{'\n'}{'\n'}{FC}</Text>
+              <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10}}>4 SESSÕES</Text>
+              <Text style={{textAlign:'center', fontWeight:'bold', fontSize:18}}>{'\n'}Defina a semana{'\n'}{'\n'}{FC}</Text>
                   <View style={{flex:1, flexDirection:'row', alignSelf:'center'}}>
                     <AntDesign onPress={()=>diminuirFC(FC)} name="minus" size={25} color="black" />
                     <Slider
                       style={{width: '65%', height: 27, marginRight:10, marginLeft:10}}
-                      minimumValue={0}
-                      maximumValue={220}
+                      minimumValue={1}
+                      maximumValue={51}
                       value={FC}
                       minimumTrackTintColor="#000000"
                       maximumTrackTintColor="#FFFFFF"
@@ -76,11 +98,11 @@ export default function Tfm2_3() {
                     Div2()
                   }
                   </View>
-              <View style={{height:180}}></View>
+                  <View style={{height:100}}></View>
             </ScrollView>
             <Footer page='tfm' />
         </View>
-    ); 
+    );
 }
 
 const styles = StyleSheet.create({
@@ -93,10 +115,25 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
+    backgroundColor:'white',
     elevation: 1,
     margin:15,
-    backgroundColor:'white',
     padding:15
+  },
+  video: {
+    alignSelf: 'center',
+    width: 280,
+    height: 200,
+  },
+  bt: {
+    alignSelf:'center',
+    borderBottomColor:'white',
+    height:4,
+    borderBottomWidth:1,
+    width:"100%",
+    padding:20,
+    backgroundColor:Colors.VermelhoClaro,
+    flexDirection:"column"
   },
   container: {
     flex:1,
@@ -107,7 +144,7 @@ const styles = StyleSheet.create({
   header: {
     width:'100%',
     padding:12,
-    backgroundColor: Colors.VerdeClaro,
+    backgroundColor: Colors.VermelhoClaro,
     borderBottomWidth:2,
     flexDirection:'row',
     alignItems:'center',
@@ -138,7 +175,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 22
+    backgroundColor:'rgba(0,0,0,0.5)'
   },
   modalView: {
     margin: 20,
@@ -161,6 +198,13 @@ const styles = StyleSheet.create({
   openButton: {
     backgroundColor: '#F194FF',
     borderRadius: 10,
+    padding: 10,
+    marginTop:20,
+    elevation: 2
+  },
+  openBtn: {
+    backgroundColor: '#F194FF',
+    borderRadius: 5,
     padding: 10,
     marginTop:20,
     elevation: 2

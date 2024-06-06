@@ -5,16 +5,16 @@ import { Colors } from '../../../../constants/Colors';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import Footer from '../../../../components/Footer';
 
-export default function Tfm4_4_3() {
+export default function Tfm5_4() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
-      <HeaderTerciario title='Pentágono B' pai='tfm/item/Tfm-4-4' />
+      <HeaderTerciario title='Ginástica com Armas' pai='tfm/item/Tfm-5' />
       <ScrollView style={{ flex: 1 }}>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>PENTÁGONO B</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>GINÁSTICA COM ARMAS</Text>
           <Video
-            source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/tfm-sa.appspot.com/o/video4.mp4?alt=media&token=3736b831-249c-414e-bb75-84c62b2de005' }}
+            source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/tfm-sa.appspot.com/o/video9.mp4?alt=media&token=9afda7c3-f3d1-4d13-84b9-cbd56e591dd0' }}
             resizeMode="contain"
             shouldPlay
             useNativeControls
