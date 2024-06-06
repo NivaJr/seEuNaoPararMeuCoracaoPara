@@ -9,11 +9,11 @@ export default function LineModal({title, setModalVisible, icon}){
         <View style={styles.iconView}>
           {
             icon === 'tfm' &&
-            <FontAwesome5  name="running" size={24} color={'green'} />      
+            <FontAwesome5  name="running" size={24} color={'#5fab8c'} />      
           }
           {
             icon === 'saude' &&  
-            <AntDesign name="heart" size={25} color={'green'} style={styles.coracao}/>
+            <AntDesign name="heart" size={25} color={'#5fab8c'} style={styles.coracao}/>
           }
         </View>
         <View style={styles.titleView}>
@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   topico:{
-    fontSize:20,
+    fontSize: 20,
     letterSpacing:1,
-    color:'green',
+    color:'#5fab8c',
     fontFamily:'BlackOpsOne_400Regular',
     flexShrink: 1,
     

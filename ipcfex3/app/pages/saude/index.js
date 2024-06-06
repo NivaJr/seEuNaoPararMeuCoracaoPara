@@ -8,7 +8,7 @@ import LineSaude from '../../../components/LineSaude';
 export default function Saude() {
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
+      <StatusBar hidden={true} />
 
       <HeaderSecundario title='SAUDE'/>
 
@@ -18,6 +18,7 @@ export default function Saude() {
           <LineSaude title='Identificação de Fatores de Risco de Síndrome Metabólica' link="pages/saude/item/Saude-5"/>
           <LineSaude title='Verificação de Pressão Arterial' link="pages/saude/item/Saude-3"/>
           <LineSaude title='Desenvolvimento de Diabete Melitus II' link="pages/saude/item/Saude-4"/>
+          <LineSaude title = "Treino Veteranos" link="pages/saude/item/Saude-6"/>
         </View>
       </View>
 

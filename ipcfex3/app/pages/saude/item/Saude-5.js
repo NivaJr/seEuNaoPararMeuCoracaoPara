@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, SafeAreaView, TextInput } from 'react-native';
-import EstiloComum from "../../EstiloComum";
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView, SafeAreaView, TextInput, StatusBar } from 'react-native';
+import Footer from '../../../../components/Footer';
+import HeaderTerciario from '../../../../components/HeaderTerciario';
 
 export default function Saude2() {
   const [sexo, setSexo] = useState(true);
@@ -136,7 +137,7 @@ export default function Saude2() {
     if (collapseVisible == false) {
       return (
         <View
-          style={{ ...styles.openButton, backgroundColor: EstiloComum.VerdeEscuro, borderWidth: 1, width: 190, alignSelf: 'center', marginTop: 30 }}
+          style={{ ...styles.openButton, backgroundColor: "#5baf8c", borderWidth: 1, width: 190, alignSelf: 'center', marginTop: 30 }}
           onTouchEnd={() => {
             setCollapseVisible(true);
           }}
@@ -154,7 +155,7 @@ export default function Saude2() {
             Risco()
           }
           <View
-            style={{ ...styles.openButton, backgroundColor: EstiloComum.VerdeEscuro, borderWidth: 1, width: 190, alignSelf: 'center' }}
+            style={{ ...styles.openButton, backgroundColor: "#5baf8c", borderWidth: 1, width: 190, alignSelf: 'center' }}
             onTouchEnd={() => {
               setCollapseVisible(false);
             }}
@@ -167,6 +168,8 @@ export default function Saude2() {
   }
   return (
     <View style={styles.container}>
+      <StatusBar hidden={true}/>
+      <HeaderTerciario title="Identificação de Fatores de Risco de Síndrome Metabólica" link="pages/saude"/>
       <ScrollView style={{ flex: 1 }}>
         <View style={styles.div}>
           <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>SÍNDROME METABÓLICA (SM)</Text>
@@ -336,6 +339,7 @@ export default function Saude2() {
         </View>
         <View style={{ height: 100 }}></View>
       </ScrollView>
+      <Footer page="saude"/>
     </View>
   );
 }
@@ -362,19 +366,19 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     width: "100%",
     padding: 20,
-    backgroundColor: EstiloComum.VermelhoClaro,
+    backgroundColor: "#e8331a",
     flexDirection: "column"
   },
   container: {
     flex: 1,
     borderBottomWidth: 1,
-    borderColor: EstiloComum.Branco,
-    backgroundColor: EstiloComum.Branco,
+    borderColor: "#fafafa",
+    backgroundColor: "#fafafa",
   },
   header: {
     width: '100%',
     padding: 12,
-    backgroundColor: EstiloComum.VermelhoClaro,
+    backgroundColor: "#e8331a",
     borderBottomWidth: 2,
     flexDirection: 'row',
     alignItems: 'center',

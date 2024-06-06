@@ -8,7 +8,7 @@ export default function LineSaude({title, link}){
     <Link href={link} asChild>
         <TouchableOpacity style={styles.line}>
           <View style={styles.iconView}>
-            <AntDesign name="heart" size={25} color={'green'} style={styles.coracao}/>
+            <AntDesign name="heart" size={25} color={'#5baf8c'} style={styles.coracao}/>
           </View>
           <View style={styles.titleView}>
             <Text style={styles.topico}>
@@ -25,11 +25,12 @@ const styles = StyleSheet.create({
     alignSelf:'center',
     height:'auto',
     width:"100%",
-    padding:10,
-    flexDirection:"row"
+    padding: 10,
+    flexDirection:"row",
+    alignItems: "center",
   },
   header: {
-    backgroundColor: 'green',
+    backgroundColor: '#5baf8c',
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',
@@ -40,9 +41,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   topico:{
-    fontSize:20,
+    fontSize: 20,
     letterSpacing:1,
-    color:'green',
+    color:'#5baf8c',
     fontFamily:'BlackOpsOne_400Regular',
     flexShrink: 1,
     

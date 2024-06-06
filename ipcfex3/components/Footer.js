@@ -22,7 +22,7 @@ export default function Footer({page}){
   
   const handleHomeColor = () => {
     if(page === "home"){
-      return "green"
+      return "#5fab8c"
     }else{
       return "gray"
     }
@@ -30,7 +30,7 @@ export default function Footer({page}){
   
   const handleTFMColor = () => {
     if(page === "tfm"){
-      return "green"
+      return "#5fab8c"
     }else{
       return "gray"
     }
@@ -38,7 +38,7 @@ export default function Footer({page}){
   
   const handleSaudeColor = () => {
     if(page === "saude"){
-      return "green"
+      return "#5fab8c"
     }else{
       return "gray"
     }
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
         height: '7%'
       },
       bottomIcon: {
-        backgroundColor: 'purple',
+        backgroundColor: '#fff',
         flex: 1,
         display: 'flex',
         justifyContent: 'center',
