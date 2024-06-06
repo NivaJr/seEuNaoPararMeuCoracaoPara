@@ -40,10 +40,10 @@ export default function Tfm5({}) {
               <View style={styles.middle}>
                 <View style={styles.middleContent}>
                   <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
-                  <LineLink title='Ginástica com Toro' link='Tfm-4-2' icon='tfm'/>
-                  <LineLink title='Circuito Operacional' link='Tfm-4-3' icon='tfm'/>
-                  <LineLink title='Ginástica com Armas' link='Tfm-4-4' icon='tfm'/>
-                  <LineLink title='Pista de Obstáculos' link='Tfm-4-5' icon='tfm'/>
+                  <LineLink title='Ginástica com Toro' link='Tfm-5-2' icon='tfm'/>
+                  <LineLink title='Circuito Operacional' link='Tfm-5-3' icon='tfm'/>
+                  <LineLink title='Ginástica com Armas' link='Tfm-5-4' icon='tfm'/>
+                  <LineLink title='Pista de Obstáculos' link='Tfm-5-5' icon='tfm'/>
                 </View>
               </View>
             </ScrollView>

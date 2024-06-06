@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ScrollView, Dimensions, StatusBar } from 'react
 import { Video } from 'expo-av';
 import { Colors } from '../../../../constants/Colors';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
+import Footer from '../../../../components/Footer';
 
 export default function Tfm4_5() {
   return (

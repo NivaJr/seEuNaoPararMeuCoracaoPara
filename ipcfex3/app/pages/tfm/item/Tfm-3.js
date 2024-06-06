@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight, ScrollView, Modal, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, TouchableHighlight, ScrollView, Modal, StatusBar } from 'react-native';
 import { Colors } from '../../../../constants/Colors';
 import LineModal from '../../../../components/LineModal';
 import LineLink from '../../../../components/LineLink';
