@@ -17,9 +17,9 @@ export default function Saude1() {
       <HeaderTerciario title="Treino Veteranos" link="pages/saude"/>
       <View style={styles.middle}>
         <View style={styles.middleContent}>
-          <LineSaude title='Treino Alfa' link="pages/saude/item/Saude1-1"/>
-          <LineSaude title='Treino Bravo' link="pages/saude/item/Saude1-2"/>
-          <LineSaude title='Treino Charlie' link="pages/saude/item/Saude1-3"/>
+          <LineSaude title='Treino Alfa' link="pages/saude/item/Saude6-1"/>
+          <LineSaude title='Treino Bravo' link="pages/saude/item/Saude6-2"/>
+          <LineSaude title='Treino Charlie' link="pages/saude/item/Saude6-3"/>
         </View>
       </View>
 

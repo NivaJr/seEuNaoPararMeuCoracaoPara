@@ -14,19 +14,10 @@ export default function saude6_1() {
               <View style={styles.div}>
                 <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15}}>Treino Alfa</Text>
                 <Text style={{padding:15}}>O treinamento do Circuito Alfa poderá ser realizado em qualquer área plana. Por ser uma atividade complementar, o uniforme utilizado será o mesmo da atividade principal que está sendo executada.{'\n'}</Text>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-1"/>
-                <LineSaude title='Sentando nos Calcanhares' link="pages/saude/item/treinoA/Saude6-1-2"/>
-                <LineSaude title='' link="pages/saude/item/treinoA/Saude6-1-3"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-4"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-5"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-6"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-7"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-8"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-9"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-11"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-12"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-13"/>
-
+                <LineSaude title='Circunferências' link="pages/saude/item/Saude1-1"/>
+                <LineSaude title='IMC' link="pages/saude/item/Saude1-2"/>
+                <LineSaude title='RCQ' link="pages/saude/item/Saude1-3"/>
+                <LineSaude title='Percentual de Gordura Corporal (%GC)' link="pages/saude/item/Saude1-4"/>
               </View>
             </ScrollView>
             <Footer page="saude"/>
