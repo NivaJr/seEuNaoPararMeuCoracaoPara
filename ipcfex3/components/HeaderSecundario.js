@@ -13,7 +13,7 @@ export default function HeaderSecundario({title}){
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: 'green',
+    backgroundColor: '#5baf8c',
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',
@@ -32,6 +32,5 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black',
   },
 })

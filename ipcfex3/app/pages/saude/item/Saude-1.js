@@ -11,6 +11,8 @@ import Figura7 from '../../../../assets/images/figura7.png';
 import Figura8 from '../../../../assets/images/figura8.png';
 import Figura9 from '../../../../assets/images/figura9.png';
 import CustomButton from '../../../../components/voltarbtn';
+import HeaderTerciario from '../../../../components/HeaderTerciario';
+
 
 
 
@@ -25,7 +27,7 @@ export default function Saude1() {
     <View style={styles.container}>
       <StatusBar hidden={true} />
 
-      <HeaderSecundario title='SAUDE'/>
+      <HeaderTerciario title="Avaliação da Composição Corporal" link="pages/saude"/>
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
@@ -86,10 +88,10 @@ export default function Saude1() {
                         </View>
                     </View>
                 </Modal>
-          <LineSaude title='Circunferências' link="pages/saude/item/Saude-1"/>
-          <LineSaude title='IMC' link="pages/saude/item/Saude-1"/>
-          <LineSaude title='IMC' link="pages/saude/item/Saude-1"/>
-          <LineSaude title='IMC' link="pages/saude/item/Saude-1"/>
+          <LineSaude title='Circunferências' link="pages/saude/item/Saude1-1"/>
+          <LineSaude title='IMC' link="pages/saude/item/Saude1-2"/>
+          <LineSaude title='RCQ' link="pages/saude/item/Saude1-3"/>
+          <LineSaude title='Percentual de Gordura Corporal (%GC)' link="pages/saude/item/Saude1-4"/>
         </View>
       </View>
 

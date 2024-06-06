@@ -1,14 +1,18 @@
 import { StyleSheet, View, Text} from 'react-native';
+import { Link } from 'expo-router';
 import { AntDesign } from '@expo/vector-icons';
 import {Colors} from '../constants/Colors'
+import { TouchableOpacity } from 'react-native';
 
-export default function HeaderTerciario({title}){
+export default function HeaderTerciario({title, link}){
 
   return(
     <View style={styles.header}>
-      <View style={styles.headerIconView}>
-        <AntDesign name="arrowleft" size={24} color="#FFFFFF" />
-      </View>
+      <Link href={link} asChild>
+        <TouchableOpacity  activeOpacity={1} style={styles.headerIconView}>
+          <AntDesign name="arrowleft" size={24} color="#FFFFFF" />
+        </TouchableOpacity>
+      </Link>
       <View style={styles.viewTextHeader}>
         <Text style={styles.textHeader}>{title}</Text>
       </View>

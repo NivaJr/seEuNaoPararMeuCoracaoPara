@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView, TextInput, StatusBar } from 'react-native';
+import Footer from '../../../../components/Footer';
+import HeaderTerciario from '../../../../components/HeaderTerciario';
 
 export default function Saude3() {
       const [pAS, setPAS]=useState(0);
@@ -81,6 +83,7 @@ export default function Saude3() {
         }
       return (
         <View style={styles.container}>
+          <HeaderTerciario title="Verificação Pressão Arterial" link="pages/saude"/>
           <StatusBar hidden={true} />
           <ScrollView style={{flex:1}}>
         <View style={styles.div}>
@@ -116,6 +119,7 @@ export default function Saude3() {
               </View>
           <View style={{height:100}}></View>
         </ScrollView>
+        <Footer page="saude"/>
         </View>
     );
 }
