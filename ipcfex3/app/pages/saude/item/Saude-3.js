@@ -83,7 +83,7 @@ export default function Saude3() {
         }
       return (
         <View style={styles.container}>
-          <HeaderTerciario title="Verificação Pressão Arterial" link="pages/saude"/>
+          <HeaderTerciario title="Verificação Pressão Arterial" pai='saude'/>
           <StatusBar hidden={true} />
           <ScrollView style={{flex:1}}>
         <View style={styles.div}>

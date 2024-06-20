@@ -265,7 +265,7 @@ export default function Saude1_4() {
           return (
             <View style={styles.container}>
               <StatusBar hidden={true} />
-              <HeaderTerciario title="Percentual de Gordura" link="pages/saude/item/Saude-1"/>
+              <HeaderTerciario title="Percentual de Gordura" pai='saude/item/Saude-1'/>
               <ScrollView style={{flex:1}}>
             <View style={styles.div}>
                   <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10}}>Percentual de Gordura Corporal{'\n'}(%GC)</Text>

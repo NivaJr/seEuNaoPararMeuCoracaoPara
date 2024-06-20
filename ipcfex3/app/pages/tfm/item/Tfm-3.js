@@ -39,9 +39,9 @@ export default function Tfm3({ }) {
               <View style={styles.middle}>
                 <View style={styles.middleContent}>
                   <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
-                  <LineLink title='Corrida Contínua' link='Tfm-3-2' icon='tfm'/>
-                  <LineLink title='Treinamento Intervalado 400M' link='Tfm-3-3' icon='tfm'/>
-                  <LineLink title='Treinamento Rústico Operacional' link='Tfm-3-4' icon='tfm'/>
+                  <LineLink title='Corrida Contínua' link='tfm/item/Tfm-3-2' icon='tfm'/>
+                  <LineLink title='Treinamento Intervalado 400M' link='tfm/item/Tfm-3-3' icon='tfm'/>
+                  <LineLink title='Treinamento Rústico Operacional' link='tfm/item/Tfm-3-4' icon='tfm'/>
                 </View>
               </View>
               </ScrollView>

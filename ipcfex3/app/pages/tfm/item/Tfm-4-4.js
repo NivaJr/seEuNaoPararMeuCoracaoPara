@@ -13,11 +13,11 @@ export default function Tfm4_4({ navigation }) {
             <ScrollView >
             <View style={styles.middle}>
               <View style={styles.middleContent}>
-                <LineLink title='Introdução'  link='Tfm-4-4-1' icon='tfm'/>
-                <LineLink title='Pentágono A' link='Tfm-4-4-2' icon='tfm'/>
-                <LineLink title='Pentágono B' link='Tfm-4-4-3' icon='tfm'/>
-                <LineLink title='Pentágono C' link='Tfm-4-4-4' icon='tfm'/>
-                <LineLink title='Pentágono D' link='Tfm-4-4-5' icon='tfm'/>
+                <LineLink title='Introdução'  link='tfm/item/Tfm-4-4-1' icon='tfm'/>
+                <LineLink title='Pentágono A' link='tfm/item/Tfm-4-4-2' icon='tfm'/>
+                <LineLink title='Pentágono B' link='tfm/item/Tfm-4-4-3' icon='tfm'/>
+                <LineLink title='Pentágono C' link='tfm/item/Tfm-4-4-4' icon='tfm'/>
+                <LineLink title='Pentágono D' link='tfm/item/Tfm-4-4-5' icon='tfm'/>
               </View>
             </View>
             </ScrollView>

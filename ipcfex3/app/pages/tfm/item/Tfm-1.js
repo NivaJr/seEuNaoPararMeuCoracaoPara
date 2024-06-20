@@ -45,11 +45,11 @@ export default function Page() {
 
         <View style={styles.middle}>
           <View style={styles.middleContent}>
-            <LineModal title='Sobre' link='Tfm-1' icon='tfm' setModalVisible={setModalVisible} />
-            <LineLink title='Fase de Aquecimento em Movimento' link='Tfm-1-2' icon='tfm'/>
-            <LineLink title='Fase de Aquecimento Estático' link='Tfm-1-3' icon='tfm'/>
-            <LineLink title='Fase de Trabalho Principal' link='Tfm-1-4' icon='tfm'/>
-            <LineLink title='Fase de Volta à Calma' link='Tfm-1-5' icon='tfm'/>
+            <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
+            <LineLink title='Fase de Aquecimento em Movimento' link='tfm/item/Tfm-1-2' icon='tfm'/>
+            <LineLink title='Fase de Aquecimento Estático' link='tfm/item/Tfm-1-3' icon='tfm'/>
+            <LineLink title='Fase de Trabalho Principal' link='tfm/item/Tfm-1-4' icon='tfm'/>
+            <LineLink title='Fase de Volta à Calma' link='tfm/item/Tfm-1-5' icon='tfm'/>
           </View>
         </View>
       </ScrollView>

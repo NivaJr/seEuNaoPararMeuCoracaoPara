@@ -169,7 +169,7 @@ export default function Saude2() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true}/>
-      <HeaderTerciario title="Identificação de Fatores de Risco de Síndrome Metabólica" link="pages/saude"/>
+      <HeaderTerciario title="Identificação de Fatores de Risco de Síndrome Metabólica" pai='saude'/>
       <ScrollView style={{ flex: 1 }}>
         <View style={styles.div}>
           <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>SÍNDROME METABÓLICA (SM)</Text>

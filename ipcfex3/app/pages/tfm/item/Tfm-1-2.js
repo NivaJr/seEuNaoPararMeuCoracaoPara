@@ -28,7 +28,7 @@ export default function Tfm1_2({ navigation }) {
               contagem. Após cada exercício, a tropa, por imitação do guia, retornará à 
               corrida lenta antes de passar para o próximo.{'\n'}
             </Text>
-            <LineLink title='Aquecimento Dinâmico' link='Tfm-1-2-1' icon='tfm'/>
+            <LineLink title='Aquecimento Dinâmico' link='tfm/item/Tfm-1-2-1' icon='tfm'/>
           </View>
         <View style={{height:20}}></View>
       </ScrollView>

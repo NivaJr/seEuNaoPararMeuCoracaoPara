@@ -9,7 +9,7 @@ import HeaderTerciario from '../../../../components/HeaderTerciario';
 export default function saude6_1() {
         return (
         <View style={styles.bc}>
-            <HeaderTerciario title="Treino Alfa"/>
+            <HeaderTerciario title="Treino Alfa" pai='saude/item/Saude-6'/>
           <ScrollView style={styles.container}>
               <View style={styles.div}>
                 <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15}}>Treino Alfa</Text>

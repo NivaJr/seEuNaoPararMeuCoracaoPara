@@ -54,8 +54,8 @@ export default function Tfm6({}) {
                 <View style={styles.middle}>
                 <View style={styles.middleContent}>
                     <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
-                    <LineLink title='Alongamento de Membros Superiores' link='Tfm-6-2' icon='tfm'/>
-                    <LineLink title='Alongamento de Membros Inferiores' link='Tfm-6-3' icon='tfm'/>
+                    <LineLink title='Alongamento de Membros Superiores' link='tfm/item/Tfm-6-2' icon='tfm'/>
+                    <LineLink title='Alongamento de Membros Inferiores' link='tfm/item/Tfm-6-3' icon='tfm'/>
                   </View>
                 </View>
               </ScrollView>

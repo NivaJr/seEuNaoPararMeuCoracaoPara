@@ -14,7 +14,7 @@ export default function Saude1() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
-      <HeaderTerciario title="Treino Veteranos" link="pages/saude"/>
+      <HeaderTerciario title="Treino Veteranos" pai='saude'/>
       <View style={styles.middle}>
         <View style={styles.middleContent}>
           <LineSaude title='Treino Alfa' link="pages/saude/item/Saude6-1"/>

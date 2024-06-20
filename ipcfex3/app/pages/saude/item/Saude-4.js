@@ -208,7 +208,7 @@ export default function Saude4() {
       return (
         <View style={styles.container}>
           <StatusBar hidden={true}/>
-          <HeaderTerciario title="Desenvolvimento Diabete Melitus II" link="pages/saude"/>
+          <HeaderTerciario title="Desenvolvimento Diabete Melitus II" pai='saude'/>
           <ScrollView style={{flex:1}}>
         <View style={styles.div}>
               <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10}}>RISCO DE DIABETE MELITUS II</Text>

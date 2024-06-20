@@ -41,11 +41,11 @@ export default function Tfm2() {
                 <View style={styles.middle}>
                   <View style={styles.middleContent}>
                     <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
-                    <LineLink title='Locais para Medir a Pulsação' link='Tfm-2-2' icon='tfm'/>
-                    <LineLink title='Cálculo da Frequência Cardíaca de Esforço' link='Tfm-2-3' icon='tfm'/>
-                    <LineLink title='Cálculo da Frequência Cardíaca Máxima' link='Tfm-2-4' icon='tfm'/>
-                    <LineLink title='Cálculo da Frequência Cardíaca de Reserva' link='Tfm-2-5' icon='tfm'/>
-                    <LineLink title='Cálculo da Frequência Cardíaca de Repouso' link='Tfm-2-6' icon='tfm'/>
+                    <LineLink title='Locais para Medir a Pulsação' link='tfm/item/Tfm-2-2' icon='tfm'/>
+                    <LineLink title='Cálculo da Frequência Cardíaca de Esforço' link='tfm/item/Tfm-2-3' icon='tfm'/>
+                    <LineLink title='Cálculo da Frequência Cardíaca Máxima' link='tfm/item/Tfm-2-4' icon='tfm'/>
+                    <LineLink title='Cálculo da Frequência Cardíaca de Reserva' link='tfm/item/Tfm-2-5' icon='tfm'/>
+                    <LineLink title='Cálculo da Frequência Cardíaca de Repouso' link='tfm/item/Tfm-2-6' icon='tfm'/>
                   </View>
                 </View>
               </ScrollView>

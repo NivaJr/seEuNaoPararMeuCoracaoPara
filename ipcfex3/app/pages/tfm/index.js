@@ -17,14 +17,14 @@ export default function Saude() {
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
-          <LineLink title='Sessão de TFM' link='Tfm-1' icon='tfm'/>
-          <LineLink title='Controle da Carga do Exercício Aeróbio' link='Tfm-2'  icon='tfm'/>
-          <LineLink title='Treinamento de Aptidão Cardiorespiratória' link='Tfm-3' icon='tfm'/>
-          <LineLink title='Treinamento de Aptidão Muscular' link='Tfm-4' icon='tfm'/>
-          <LineLink title='Treinamento Utilitário' link='Tfm-5' icon='tfm'/>
-          <LineLink title='Sessão de Exercícios de Alongamento' link='Tfm-6' icon='tfm'/>
-          <LineLink title='Programa Anual de TFM' link='Tfm-7' icon='tfm'/>
-          <LineLink title='Teste de Avaliação Física' link='Tfm-8' icon='tfm'/>
+          <LineLink title='Sessão de TFM' link='tfm/item/Tfm-1' icon='tfm'/>
+          <LineLink title='Controle da Carga do Exercício Aeróbio' link='tfm/item/Tfm-2'  icon='tfm'/>
+          <LineLink title='Treinamento de Aptidão Cardiorespiratória' link='tfm/item/Tfm-3' icon='tfm'/>
+          <LineLink title='Treinamento de Aptidão Muscular' link='tfm/item/Tfm-4' icon='tfm'/>
+          <LineLink title='Treinamento Utilitário' link='tfm/item/Tfm-5' icon='tfm'/>
+          <LineLink title='Sessão de Exercícios de Alongamento' link='tfm/item/Tfm-6' icon='tfm'/>
+          <LineLink title='Programa Anual de TFM' link='tfm/item/Tfm-7' icon='tfm'/>
+          <LineLink title='Teste de Avaliação Física' link='tfm/item/Tfm-8' icon='tfm'/>
         </View>
       </View>
 

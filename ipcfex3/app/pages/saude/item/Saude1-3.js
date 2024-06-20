@@ -182,7 +182,7 @@ export default function Saude1_3() {
           return (
             <View style={styles.container}>
               <StatusBar hidden={true} />
-              <HeaderTerciario title="RCQ" link="pages/saude/item/Saude-1"/>
+              <HeaderTerciario title="RCQ" pai='saude/item/Saude-1'/>
               <ScrollView style={{flex:1}}>
             <View style={styles.div}>
                   <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10}}>RCQ</Text>

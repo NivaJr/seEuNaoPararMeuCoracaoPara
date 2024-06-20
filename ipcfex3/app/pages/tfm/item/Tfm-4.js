@@ -40,9 +40,9 @@ export default function Tfm3({ navigation }) {
               <View style={styles.middle}>
                 <View style={styles.middleContent}>
                   <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
-                  <LineLink title='Ginástica Básica' link='Tfm-4-2' icon='tfm'/>
-                  <LineLink title='Treinamento em Circuito' link='Tfm-4-3' icon='tfm'/>
-                  <LineLink title='Circuito de Pentágonos' link='Tfm-4-4' icon='tfm'/>
+                  <LineLink title='Ginástica Básica' link='tfm/item/Tfm-4-2' icon='tfm'/>
+                  <LineLink title='Treinamento em Circuito' link='tfm/item/Tfm-4-3' icon='tfm'/>
+                  <LineLink title='Circuito de Pentágonos' link='tfm/item/Tfm-4-4' icon='tfm'/>
                 </View>
               </View>
               </ScrollView>  

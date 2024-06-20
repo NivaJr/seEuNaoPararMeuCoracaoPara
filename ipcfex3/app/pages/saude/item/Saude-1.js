@@ -1,10 +1,7 @@
 import { Text,  View, Image, Modal, StyleSheet, StatusBar, ScrollView } from 'react-native';
 import React, {useState} from 'react';
 import Footer from "../../../../components/Footer"
-import HeaderSecundario from "../../../../components/HeaderSecundario"
-import LineSaude from "../../../../components/LineSaude"
 import LineModal from '../../../../components/LineModal';
-import { Button } from 'react-native';
 import Figura5 from '../../../../assets/images/figura5.png';
 import figura6 from "../../../../assets/images/figura6.png";
 import Figura7 from '../../../../assets/images/figura7.png';
@@ -12,6 +9,7 @@ import Figura8 from '../../../../assets/images/figura8.png';
 import Figura9 from '../../../../assets/images/figura9.png';
 import CustomButton from '../../../../components/voltarbtn';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
+import LineLink from '../../../../components/LineLink';
 
 
 
@@ -27,7 +25,7 @@ export default function Saude1() {
     <View style={styles.container}>
       <StatusBar hidden={true} />
 
-      <HeaderTerciario title="Avaliação da Composição Corporal" link="pages/saude"/>
+      <HeaderTerciario title="Avaliação da Composição Corporal" pai='saude'/>
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
@@ -88,10 +86,10 @@ export default function Saude1() {
                         </View>
                     </View>
                 </Modal>
-          <LineSaude title='Circunferências' link="pages/saude/item/Saude1-1"/>
-          <LineSaude title='IMC' link="pages/saude/item/Saude1-2"/>
-          <LineSaude title='RCQ' link="pages/saude/item/Saude1-3"/>
-          <LineSaude title='Percentual de Gordura Corporal (%GC)' link="pages/saude/item/Saude1-4"/>
+                <LineLink title='Circunferências' link='saude/item/Saude1-1' icon='saude'/>
+                <LineLink title='IMC' link='saude/item/Saude1-2' icon='saude'/>
+                <LineLink title='RCQ' link='saude/item/Saude1-3' icon='saude'/>
+                <LineLink title='Percentual de Gordura Corporal (%GC)' link='saude/item/Saude1-4' icon='saude'/>
         </View>
       </View>
 

@@ -68,7 +68,7 @@ export default function Saude1_2() {
       }
           return (
             <View style={styles.container}>
-              <HeaderTerciario title="IMC" link="pages/saude/item/Saude-1"/>
+              <HeaderTerciario title="IMC" pai='saude/item/Saude-1'/>
               <StatusBar hidden={true} />
               <ScrollView style={{flex:1}}>
             <View style={styles.div}>

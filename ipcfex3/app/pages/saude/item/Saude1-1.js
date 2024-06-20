@@ -82,7 +82,7 @@ export default function Saude1_1() {
     }
           return (
             <View style={styles.container}>
-              <HeaderTerciario title="Circunferências" link="pages/saude/item/Saude-1"/>
+              <HeaderTerciario title="Circunferências" pai='saude/item/Saude-1'/>
               <ScrollView style={{flex:1}}>
                 <StatusBar hidden={true} />
                 <Modal

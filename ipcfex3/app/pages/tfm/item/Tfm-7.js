@@ -40,8 +40,8 @@ export default function Tfm7({ navigation }) {
               <View style={styles.middle}>
               <View style={styles.middleContent}>
                   <LineModal title='Sobre' icon='tfm' setModalVisible={setModalVisible} />
-                  <LineLink title='4 Sessões' link='Tfm-7-2' icon='tfm'/>
-                  <LineLink title='5 Sessões' link='Tfm-7-3' icon='tfm'/>
+                  <LineLink title='4 Sessões' link='tfm/item/Tfm-7-2' icon='tfm'/>
+                  <LineLink title='5 Sessões' link='tfm/item/Tfm-7-3' icon='tfm'/>
                 </View>
               </View>
             </ScrollView>

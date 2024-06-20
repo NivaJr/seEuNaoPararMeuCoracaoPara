@@ -2,7 +2,7 @@ import { Text,  View, Image, Modal, StyleSheet, StatusBar } from 'react-native';
 import React, {useState} from 'react';
 import Footer from '../../../components/Footer';
 import HeaderSecundario from '../../../components/HeaderSecundario';
-import LineSaude from '../../../components/LineSaude';
+import LineLink from '../../../components/LineLink';
 
 
 export default function Saude() {
@@ -14,11 +14,11 @@ export default function Saude() {
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
-          <LineSaude title = "Treino Veteranos" link="pages/saude/item/Saude-6"/>
-          <LineSaude title='Avaliação da Composição Corporal' link="pages/saude/item/Saude-1"/>
-          <LineSaude title='Identificação de Fatores de Risco de Síndrome Metabólica' link="pages/saude/item/Saude-5"/>
-          <LineSaude title='Verificação de Pressão Arterial' link="pages/saude/item/Saude-3"/>
-          <LineSaude title='Desenvolvimento de Diabete Melitus II' link="pages/saude/item/Saude-4"/>
+          <LineLink title='Treino Veteranos' link='saude/item/Saude-6' icon='saude'/>
+          <LineLink title='Avaliação da Composição Corporal' link='saude/item/Saude-1' icon='saude'/>
+          <LineLink title='Identificação de Fatores de Risco de Síndrome Metabólica' link='saude/item/Saude-7' icon='saude'/>
+          <LineLink title='Verificação de Pressão Arterial' link='saude/item/Saude-3' icon='saude'/>
+          <LineLink title='Desenvolvimento de Diabete Melitus II' link='saude/item/Saude-4' icon='saude'/>
         </View>
       </View>
 

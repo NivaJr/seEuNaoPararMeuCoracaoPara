@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import EstiloComum from "../../EstiloComum";
-import { FontAwesome5 } from '@expo/vector-icons';
 import LineSaude from '../../../../components/LineSaude';
 import Footer from '../../../../components/Footer';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
@@ -9,11 +8,15 @@ import HeaderTerciario from '../../../../components/HeaderTerciario';
 export default function saude6_1() {
         return (
         <View style={styles.bc}>
-            <HeaderTerciario title="Treino Alfa"/>
+            <HeaderTerciario title="Treino Alfa" pai='saude/item/Saude-6'/>
           <ScrollView style={styles.container}>
               <View style={styles.div}>
                 <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15}}>Treino Alfa</Text>
                 <Text style={{padding:15}}>O treinamento do Circuito Alfa poderá ser realizado em qualquer área plana. Por ser uma atividade complementar, o uniforme utilizado será o mesmo da atividade principal que está sendo executada.{'\n'}</Text>
+                <LineLink title='Circunferências' link='saude/item/Saude1-1' icon='saude'/>
+                <LineLink title='Circunferências' link='saude/item/Saude1-1' icon='saude'/>
+                <LineLink title='Circunferências' link='saude/item/Saude1-1' icon='saude'/>
+                <LineLink title='Circunferências' link='saude/item/Saude1-1' icon='saude'/>
                 <LineSaude title='Circunferências' link="pages/saude/item/Saude1-1"/>
                 <LineSaude title='IMC' link="pages/saude/item/Saude1-2"/>
                 <LineSaude title='RCQ' link="pages/saude/item/Saude1-3"/>
