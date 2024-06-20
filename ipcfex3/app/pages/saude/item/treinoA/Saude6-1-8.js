@@ -131,4 +131,4 @@ const styles = StyleSheet.create({
     fontFamily: 'BlackOpsOne_400Regular',
     textAlign: "center"
   }
-});s
+});

@@ -16,16 +16,18 @@ export default function saude6_1() {
                 <Text style={{padding:15}}>O treinamento do Circuito Alfa poderá ser realizado em qualquer área plana. Por ser uma atividade complementar, o uniforme utilizado será o mesmo da atividade principal que está sendo executada.{'\n'}</Text>
                 <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-1"/>
                 <LineSaude title='Sentando nos Calcanhares' link="pages/saude/item/treinoA/Saude6-1-2"/>
-                <LineSaude title='' link="pages/saude/item/treinoA/Saude6-1-3"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-4"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-5"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-6"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-7"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-8"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-9"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-11"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-12"/>
-                <LineSaude title='Abraçando as Pernas' link="pages/saude/item/treinoA/Saude6-1-13"/>
+                <LineSaude title='Circundação dos Braços' link="pages/saude/item/treinoA/Saude6-1-4"/>
+                <LineSaude title='Deslizamento de braços na parede' link="pages/saude/item/treinoA/Saude6-1-5"/>
+                <LineSaude title='Agachamento (Sofá)' link="pages/saude/item/treinoA/Saude6-1-6"/>
+                <LineSaude title='Flexão de Braços (Sofá)' link="pages/saude/item/treinoA/Saude6-1-7"/>
+                <LineSaude title='Corrida Estacionária' link="pages/saude/item/treinoA/Saude6-1-8"/>
+                <LineSaude title='Prancha Baixa' link="pages/saude/item/treinoA/Saude6-1-9"/>
+                <LineSaude title='Burppe' link="pages/saude/item/treinoA/Saude6-1-11"/>
+                <LineSaude title='Abdominal Supra' link="pages/saude/item/treinoA/Saude6-1-12"/>
+                <LineSaude title='Triceps Mergulho' link="pages/saude/item/treinoA/Saude6-1-13"/>
+                <LineSaude title='Elevação do Quadril' link="pages/saude/item/treinoA/Saude6-1-14"/>
+                <LineSaude title='Agachamento Isométrico' link="pages/saude/item/treinoA/Saude6-1-14"/>
+                <LineSaude title='Escalador ' link="pages/saude/item/treinoA/Saude6-1-14"/>
 
               </View>
             </ScrollView>

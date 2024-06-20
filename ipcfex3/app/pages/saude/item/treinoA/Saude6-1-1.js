@@ -1,11 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Dimensions, StatusBar } from 'react-native';
 import { Video } from 'expo-av';
 import EstiloComum from "../../../EstiloComum";
+import HeaderTerciario from '../../../../../components/HeaderTerciario';
+import Footer from '../../../../../components/Footer';
 
 export default function Tfm3_4_1() {
   return (
     <View style={styles.container}>
+      <StatusBar hidden={true} />
+      <HeaderTerciario title='Abraçando as Pernas' pai='pages/saude/item/Saude6-1' />
       <ScrollView style={{ flex: 1 }}>
         <View style={styles.div}>
           <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>INTRODUÇÃO</Text>
@@ -18,6 +22,7 @@ export default function Tfm3_4_1() {
           />
         </View>
       </ScrollView>
+      <Footer page='saude'/>
     </View>
   );
 }

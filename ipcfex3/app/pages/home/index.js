@@ -19,7 +19,7 @@ const style = StyleSheet.create({
     height:'auto',
     width:'100%',
     position:'absolute',
-    bottom:80
+    bottom:10
   },
   imageBotLeft: {
     height:70,
