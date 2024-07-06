@@ -1,7 +1,6 @@
 import { Text,  View, Image, Modal, StyleSheet, StatusBar, ScrollView } from 'react-native';
 import React, {useState} from 'react';
 import Footer from "../../../../components/Footer"
-
 import LineSaude from "../../../../components/LineSaude"
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 

@@ -1,18 +1,49 @@
-import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Dimensions, StatusBar } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, ScrollView, Dimensions, StatusBar, Modal, TouchableHighlight } from 'react-native';
 import { Video } from 'expo-av';
-import EstiloComum from "../../../EstiloComum";
+import { Ionicons } from '@expo/vector-icons';
 import HeaderTerciario from '../../../../../components/HeaderTerciario';
 import Footer from '../../../../../components/Footer';
+import { Colors } from '../../../../../constants/Colors';
 
 export default function Tfm3_4_1() {
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
-      <HeaderTerciario title='Abraçando as Pernas' pai='pages/saude/item/Saude6-1' />
+      <HeaderTerciario title='Treino Alfa' pai='saude/item/Saude6-1' />
       <ScrollView style={{ flex: 1 }}>
+        <Modal
+            animationType="slide"
+            transparent={true}
+            visible={modalVisible}
+          >
+            <View style={styles.centeredView}>
+              <View style={styles.modalView}>
+                <ScrollView>
+                  <Text style={{ ...styles.modalText }}>SOBRE{"\n"}</Text>
+                  <Text>A sessão de treinamento físico militar caracteriza-se pelo período durante o qual o militar realiza um conjunto de atividades físicas, incluindo o aquecimento, a atividade principal e a volta à calma, visando à melhoria da saúde e ao desenvolvimento da condição física.{"\n"}
+                  </Text>
+                  <Text>A duração de uma sessão de TFM é de dois tempos de instrução ou 90 minutos.
+                    A frequência ideal do TFM é de cinco sessões semanais, previstas em horário de instrução. A frequência mínima deve ser de quatro sessões semanais.{"\n"}
+                  </Text>
+                  <Text>Uma sessão completa de TFM compõe-se de três fases: aquecimento, trabalho principal e volta à calma.{"\n"}
+                  </Text>
+                </ScrollView>
+
+                <TouchableHighlight
+                  style={{ ...styles.openButton, backgroundColor: Colors.VerdeEscuro, borderWidth: 1, width: 90 }}
+                  onPress={() => {
+                    setModalVisible(!modalVisible);
+                  }}
+                >
+                  <Text style={{ ...styles.textStyle, fontFamily: 'BlackOpsOne_400Regular' }}>VOLTAR</Text>
+                </TouchableHighlight>
+              </View>
+            </View>
+          </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>INTRODUÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
           <Video
             source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/01%20Abra%C3%A7ando%20as%20pernas.mov?alt=media&token=4bf08864-ddd0-4134-8467-e6474ad39897" }}
             resizeMode="contain"
@@ -20,6 +51,18 @@ export default function Tfm3_4_1() {
             useNativeControls
             style={{ height: 200 }}
           />
+          <View 
+            style={{borderTopWidth: 1.5, borderColor: 'gray', paddingTop: 10, 
+                    marginTop: 10, display: "flex"}}
+          >
+            <View
+              style={{ ...styles.titleBtn, width: '100%', alignSelf: 'center', display: 'flex', flexDirection: 'row', alignItems: 'center' }}
+              onTouchEnd={() => { setModalVisible(true)}}
+            >
+              <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>EXERCÍCIO NR 1 teste para</Text>
+              <Ionicons name="information-circle-outline" size={24} color="black" />
+            </View>
+          </View>
         </View>
       </ScrollView>
       <Footer page='saude'/>
@@ -54,19 +97,19 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     width: "100%",
     padding: 20,
-    backgroundColor: EstiloComum.VermelhoClaro,
+    backgroundColor: Colors.VermelhoClaro,
     flexDirection: "column"
   },
   container: {
     flex: 1,
     borderBottomWidth: 1,
-    borderColor: EstiloComum.Branco,
-    backgroundColor: EstiloComum.Branco,
+    borderColor: Colors.Branco,
+    backgroundColor: Colors.Branco,
   },
   header: {
     width: '100%',
     padding: 12,
-    backgroundColor: EstiloComum.VermelhoClaro,
+    backgroundColor: Colors.VermelhoClaro,
     borderBottomWidth: 2,
     flexDirection: 'row',
     alignItems: 'center',
@@ -124,12 +167,11 @@ const styles = StyleSheet.create({
     marginTop: 20,
     elevation: 2
   },
-  openBtn: {
+  titleBtn: {
     backgroundColor: '#F194FF',
-    borderRadius: 5,
+    borderRadius: 0,
     padding: 10,
     marginTop: 20,
-    elevation: 2
   },
   textStyle: {
     color: "white",
