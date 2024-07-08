@@ -21,22 +21,25 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>ABRAÇANDO AS PERNAS{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>ESCALADOR{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
-                  <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
+                  <Text style={styles.secondModalText}>
+                    TEMPO DE EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}20s - exercício estático (preparação){"\n"}
+                    {"\t"}30s{"\n"}
                   </Text>
-                  <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
-                  </Text>
-                  <Text>
-                  {"\t"}No solo, abraçando as pernas e cabeça apoiada no chão{"\n"}
-                  </Text>
-                  <Text style={styles.secondModalText}>OBSERVAÇÕES:
+                  <Text style={styles.secondModalText}>
+                    CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Permanecer por 20s na posição, respirando normalmente{"\n"}
+                    {"\t"}Realizar o movimento com apoio no sofá{"\n"}
+                  </Text>
+                  <Text style={styles.secondModalText}>
+                    OBSERVAÇÕES:
+                  </Text>
+                  <Text>
+                    {"\t"}Abdome contraído e respirando{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -69,17 +72,17 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-              Abraçando as Pernas
+                ESCALADOR
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>
             <View style={{ height: '20%',}}>
               <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 10, alignItems: 'center', height: 70}}>
-                <Link href={`pages/saude/item/treinoA/Saude6-1-2`} asChild>
+                <Link href={`pages/saude/item/treinoA/Saude6-1-13`} asChild>
                   <Pressable
                     style={{ ...styles.proxButton }}
                   >
-                    <Text style={{ ...styles.proxTextStyle}}>Próximo</Text>
+                    <Text style={{ ...styles.proxTextStyle}}>Anterior</Text>
                   </Pressable>
                 </Link>
               </View>

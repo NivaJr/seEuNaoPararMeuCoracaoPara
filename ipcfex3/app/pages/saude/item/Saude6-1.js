@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, StatusBar } from 'react-native';
 import EstiloComum from "../../EstiloComum";
-import { FontAwesome5 } from '@expo/vector-icons';
 import LineSaude from '../../../../components/LineSaude';
 import Footer from '../../../../components/Footer';
 import HeaderTerciario from '../../../../components/HeaderTerciario';

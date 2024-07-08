@@ -1,23 +1,103 @@
-import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Dimensions } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, ScrollView, StatusBar, Modal, TouchableHighlight, Button, Pressable } from 'react-native';
 import { Video } from 'expo-av';
-import EstiloComum from "../../../EstiloComum";
+import { Ionicons } from '@expo/vector-icons';
+import HeaderTerciario from '../../../../../components/HeaderTerciario';
+import Footer from '../../../../../components/Footer';
+import { Colors } from '../../../../../constants/Colors';
+import { Link } from 'expo-router';
 
 export default function Tfm3_4_1() {
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.container}>
-      <ScrollView style={{ flex: 1 }}>
+      <StatusBar hidden={true} />
+      <HeaderTerciario title='Treino Alfa' pai='saude/item/Saude6-1' />
+      <ScrollView style={{ flex: 1}}>
+        <Modal
+            animationType="slide"
+            transparent={true}
+            visible={modalVisible}
+          >
+            <View style={styles.centeredView}>
+              <View style={styles.modalView}>
+                <Text style={{ ...styles.modalText }}>DESLIZAMENTO DE BRAÇOS NA PAREDE{"\n"}</Text>
+                <ScrollView style={{alignSelf: 'flex-start'}}>
+                  <Text style={styles.secondModalText}>
+                    TEMPO DE EXECUÇÃO:
+                  </Text>
+                  <Text>
+                    {"\t"}15 repetições{"\n"}
+                  </Text>
+                  <Text style={styles.secondModalText}>
+                    CORRETA EXECUÇÃO:
+                  </Text>
+                  <Text>
+                    {"\t"}Apoiado em uma parede, deslizar os braços tentando manter contato com a parede{"\n"}
+                  </Text>
+                  <Text style={styles.secondModalText}>
+                    OBSERVAÇÕES:
+                  </Text>
+                  <Text>
+                    {"\t"}Abdome contraído e respirando{"\n"}
+                  </Text>
+                </ScrollView>
+
+                <TouchableHighlight
+                  style={{ ...styles.openButton, backgroundColor: Colors.VerdeEscuro, borderWidth: 1, width: 90 }}
+                  onPress={() => {
+                    setModalVisible(!modalVisible);
+                  }}
+                >
+                  <Text style={{ ...styles.textStyle, fontFamily: 'BlackOpsOne_400Regular' }}>VOLTAR</Text>
+                </TouchableHighlight>
+              </View>
+            </View>
+          </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>INTRODUÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
           <Video
-            source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/tfm-sa.appspot.com/o/video2.mp4?alt=media&token=7d63787c-59f1-4853-895c-16af40f0c3fe' }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/01%20Deslizamento%20de%20bra%C3%A7os%20na%20parede.mov?alt=media&token=edd44118-7db1-48f0-9d5c-df782335ac7d" }}
             resizeMode="contain"
             shouldPlay
             useNativeControls
             style={{ height: 200 }}
           />
+          <View 
+            style={{borderTopWidth: 1.5, borderColor: 'gray', paddingTop: 10, 
+                    marginTop: 10, display: "flex", gap: 20}}
+          >
+            <View
+              style={{ ...styles.titleBtn, width: '100%', alignSelf: 'center', display: 'flex', flexDirection: 'row', alignItems: 'center' }}
+              onTouchEnd={() => { setModalVisible(true)}}
+            >
+              <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
+                DESLIZAMENTO DE BRAÇOS NA PAREDE
+              </Text>
+              <Ionicons name="information-circle-outline" size={24} color="black" />
+            </View>
+            <View style={{ height: '20%',}}>
+              <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 10, alignItems: 'center', height: 70}}>
+                <Link href={`pages/saude/item/treinoA/Saude6-1-3`} asChild>
+                  <Pressable
+                    style={{ ...styles.proxButton }}
+                  >
+                    <Text style={{ ...styles.proxTextStyle}}>Anterior</Text>
+                  </Pressable>
+                </Link>
+                <Link href={`pages/saude/item/treinoA/Saude6-1-5`} asChild>
+                  <Pressable
+                    style={{ ...styles.proxButton }}
+                  >
+                    <Text style={{ ...styles.proxTextStyle}}>Próximo</Text>
+                  </Pressable>
+                </Link>
+              </View>
+            </View>
+          </View>
         </View>
       </ScrollView>
+      <Footer page='saude'/>
     </View>
   );
 }
@@ -49,19 +129,19 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     width: "100%",
     padding: 20,
-    backgroundColor: EstiloComum.VermelhoClaro,
+    backgroundColor: Colors.VermelhoClaro,
     flexDirection: "column"
   },
   container: {
     flex: 1,
     borderBottomWidth: 1,
-    borderColor: EstiloComum.Branco,
-    backgroundColor: EstiloComum.Branco,
+    borderColor: Colors.Branco,
+    backgroundColor: Colors.Branco,
   },
   header: {
     width: '100%',
     padding: 12,
-    backgroundColor: EstiloComum.VermelhoClaro,
+    backgroundColor: Colors.VermelhoClaro,
     borderBottomWidth: 2,
     flexDirection: 'row',
     alignItems: 'center',
@@ -85,8 +165,12 @@ const styles = StyleSheet.create({
   },
   modalText: {
     marginBottom: 15,
-    fontWeight: "bold",
-    textAlign: "center"
+    textAlign: "center",
+    fontFamily: 'BlackOpsOne_400Regular',
+    fontSize: 18
+  },
+  secondModalText: {
+    fontWeight: 'bold',
   },
   centeredView: {
     flex: 1,
@@ -119,16 +203,28 @@ const styles = StyleSheet.create({
     marginTop: 20,
     elevation: 2
   },
-  openBtn: {
-    backgroundColor: '#F194FF',
-    borderRadius: 5,
+  titleBtn: {
+    borderRadius: 0,
     padding: 10,
     marginTop: 20,
-    elevation: 2
   },
   textStyle: {
     color: "white",
     fontFamily: 'BlackOpsOne_400Regular',
     textAlign: "center"
-  }
+  },
+  proxTextStyle: {
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center"
+  },
+  proxButton:{
+    backgroundColor: Colors.VerdeEscuro, 
+    borderWidth: 1, 
+    width: 110,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 10,
+    elevation: 2
+  },
 });
