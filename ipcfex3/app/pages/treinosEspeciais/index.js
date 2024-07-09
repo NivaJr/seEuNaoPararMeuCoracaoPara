@@ -5,24 +5,20 @@ import HeaderSecundario from '../../../components/HeaderSecundario';
 import LineLink from '../../../components/LineLink';
 
 
-export default function Saude() {
+export default function TreinosEspeciais() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
 
-      <HeaderSecundario title='SAÚDE'/>
+      <HeaderSecundario title='TREINOS ESPECIAIS'/>
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
-          <LineLink title='Treino Veteranos' link='saude/item/Saude-6' icon='saude'/>
-          <LineLink title='Avaliação da Composição Corporal' link='saude/item/Saude-1' icon='saude'/>
-          <LineLink title='Identificação de Fatores de Risco de Síndrome Metabólica' link='saude/item/Saude-2' icon='saude'/>
-          <LineLink title='Verificação de Pressão Arterial' link='saude/item/Saude-3' icon='saude'/>
-          <LineLink title='Desenvolvimento de Diabete Melitus II' link='saude/item/Saude-4' icon='saude'/>
+          <LineLink title='Treino Veteranos' link='treinosEspeciais/item/TreinosEspeciais-6' icon='treinosEspeciais'/>
         </View>
       </View>
 
-      <Footer page="saude"/>
+      <Footer page="treinosEspeciais"/>
 
     </View>
   );

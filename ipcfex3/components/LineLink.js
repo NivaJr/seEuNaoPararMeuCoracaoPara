@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { FontAwesome5, AntDesign } from '@expo/vector-icons';
+import { FontAwesome5, AntDesign, MaterialCommunityIcons } from '@expo/vector-icons';
 import { Link } from "expo-router";
 import { Colors } from "../constants/Colors"
 
@@ -17,6 +17,10 @@ export default function LineLink({title, link, icon}){
           {
             icon === 'saude' &&  
             <AntDesign name="heart" size={25} color={Colors.VerdeEscuro} style={styles.coracao}/>
+          }
+          {
+            icon === 'treinosEspeciais' &&  
+            <MaterialCommunityIcons name="weight-lifter" size={25} color={Colors.VerdeEscuro}/>
           }
         </View>
         <View style={styles.titleView}>
@@ -39,7 +43,7 @@ const styles = StyleSheet.create({
     // backgroundColor: 'black',
   },
   header: {
-    backgroundColor: 'green',
+    backgroundColor: Colors.VerdeEscuro,
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView, TextInput, StatusBar } from 'react-native';
 import Footer from '../../../../components/Footer';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
+import { Colors } from '../../../../constants/Colors';
 
 export default function Saude3() {
       const [pAS, setPAS]=useState(0);
@@ -55,7 +56,7 @@ export default function Saude3() {
           if(collapseVisible==false){
             return(
                 <View
-                      style={{ ...styles.openButton, backgroundColor: "#5baf8c", borderWidth:1, width:190, alignSelf:'center' }}
+                      style={{ ...styles.openButton, backgroundColor: Colors.VerdeEscuro, borderWidth:1, width:190, alignSelf:'center' }}
                       onTouchEnd={() => {
                         setCollapseVisible(true);
                       }}
@@ -70,7 +71,7 @@ export default function Saude3() {
                   Risco()
                 }
                 <View
-                      style={{ ...styles.openButton, backgroundColor: "#5baf8c", borderWidth:1, width:190, alignSelf:'center' }}
+                      style={{ ...styles.openButton, backgroundColor: Colors.VerdeEscuro, borderWidth:1, width:190, alignSelf:'center' }}
                       onTouchEnd={() => {
                         setCollapseVisible(false);
                       }}

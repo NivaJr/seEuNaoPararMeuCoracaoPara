@@ -1,18 +1,20 @@
 import { FontAwesome5, Ionicons, AntDesign } from '@expo/vector-icons';
 import { StatusBar, View, StyleSheet, Dimensions, TouchableOpacity, Image} from 'react-native';
 import { Pressable, Text } from 'react-native';
-import { Link } from 'expo-router';
 import { useState } from 'react';
 import Saude from './pages/saude';
 import Home from './pages/home'
 import Tfm from './pages/tfm'
 import { useFonts, BlackOpsOne_400Regular } from '@expo-google-fonts/black-ops-one';
 import Footer from '../components/Footer';
+import { Colors } from '../constants/Colors';
+import TreinosEspeciais from './pages/treinosEspeciais';
 
 export default function Page() {
     const [focoTfm, setFocoTfm] = useState(false)
     const [focoHome, setFocoHome] = useState(true)
     const [focoSaude, setFocoSaude] = useState(false)
+    const [focoTreinosEspeciais, setFocoTreinosEspeciais] = useState(false)
 
     let [fontsLoaded] = useFonts({
         BlackOpsOne_400Regular,
@@ -27,8 +29,12 @@ export default function Page() {
     <View style={styles.main}>
         <StatusBar hidden={true} />
         <View style={focoHome ? styles.tetoHome  : styles.teto}>
-            {focoHome ? <Text style={styles.tituloTetoHome}>IPCFEX</Text> : focoSaude ? <Text style={styles.tituloTeto}> SAÚDE</Text> : <Text style={styles.tituloTeto}> TFM</Text>}
-            {focoHome && <Image source={require('../assets/images/icon.png')} style={styles.iconHome}/>}         
+            {focoHome ? <Text style={styles.tituloTetoHome}>IPCFEX</Text> 
+                : focoSaude ? <Text style={styles.tituloTeto}>SAÚDE</Text> 
+                : focoHome ? <Text style={styles.tituloTeto}>TFM</Text> 
+                : <Text style={styles.tituloTeto}>TREINOS ESPECIAIS</Text>
+            }
+            {focoHome && <Image source={require('../assets/images/logoipcfex.png')} style={styles.iconHome}/>}         
         </View>
 
         {
@@ -42,6 +48,10 @@ export default function Page() {
         {
             focoTfm &&
             <Tfm/>
+        }
+        {
+            focoTreinosEspeciais &&
+            <TreinosEspeciais/>
         }
         <Footer page="home"/>
     </View>
@@ -104,12 +114,13 @@ const styles = StyleSheet.create({
         right:0,
         position:'relative',
         display:'flex',
-        backgroundColor:'#77d89d',
+        backgroundColor: Colors.VerdeClaro,
         maxHeight:100,
         alignItems:'center',
         justifyContent:'center',
         paddingLeft: 15,
         flexDirection:'row',
+        paddingVertical: 10,
     },
     teto: {
         top:0,
@@ -117,7 +128,7 @@ const styles = StyleSheet.create({
         right:0,
         position:'relative',
         display:'flex',
-        backgroundColor:'#77d89d',
+        backgroundColor: Colors.VerdeClaro,
         maxHeight:80,
         alignItems:'center',
         justifyContent:'center',
@@ -125,7 +136,7 @@ const styles = StyleSheet.create({
     },
     iconHome:{
         objectFit: 'contain',
-        maxHeight: 100,
+        maxHeight: 80,
         flex:1,
         
         

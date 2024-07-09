@@ -1,4 +1,5 @@
 import { StyleSheet, View, Text} from 'react-native';
+import { Colors } from '../constants/Colors';
 
 export default function HeaderSecundario({title}){
 
@@ -13,7 +14,7 @@ export default function HeaderSecundario({title}){
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: '#5baf8c',
+    backgroundColor: Colors.VerdeEscuro,
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',

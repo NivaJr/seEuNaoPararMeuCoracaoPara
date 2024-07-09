@@ -13,7 +13,7 @@ export default function Tfm7() {
             <View style={styles.div}>
                 <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, color:'black'}}>Diretriz para o Treinamento Físico Militar do Exército e sua Avaliação</Text>
                 <Button
-                  onPress={() => Linking.openURL('https://www.ipcfex.eb.mil.br/images/ipcfex_docs/Port_n_032-EME_de_31_Mar_08-TAF.pdf')}
+                  onPress={() => Linking.openURL('https://www.ipcfex.eb.mil.br/images/Antigos/Port_850-EME_Dtz_Avl_Fis_EB.pdf')}
                   title="Baixar Portaria"
                   color={Colors.VerdeEscuro}
                   accessibilityLabel="Link para a portaria de Treinamento Físico Militar do Exército"

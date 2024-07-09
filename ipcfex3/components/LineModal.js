@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { FontAwesome5, AntDesign } from '@expo/vector-icons';
+import { Colors } from "../constants/Colors";
 
 
 
@@ -9,11 +10,11 @@ export default function LineModal({title, setModalVisible, icon}){
         <View style={styles.iconView}>
           {
             icon === 'tfm' &&
-            <FontAwesome5  name="running" size={24} color={'#5fab8c'} />      
+            <FontAwesome5  name="running" size={24} color={Colors.VerdeEscuro} />      
           }
           {
             icon === 'saude' &&  
-            <AntDesign name="heart" size={25} color={'#5fab8c'} style={styles.coracao}/>
+            <AntDesign name="heart" size={25} color={Colors.VerdeEscuro} style={styles.coracao}/>
           }
         </View>
         <View style={styles.titleView}>
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
     flexDirection:"row"
   },
   header: {
-    backgroundColor: 'green',
+    backgroundColor: Colors.VerdeEscuro,
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
   topico:{
     fontSize: 20,
     letterSpacing:1,
-    color:'#5fab8c',
+    color: Colors.VerdeEscuro,
     fontFamily:'BlackOpsOne_400Regular',
     flexShrink: 1,
     

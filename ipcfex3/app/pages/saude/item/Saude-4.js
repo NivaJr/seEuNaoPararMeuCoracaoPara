@@ -4,6 +4,7 @@ import { AntDesign } from '@expo/vector-icons';
 import Slider from '@react-native-community/slider';
 import Footer from '../../../../components/Footer';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
+import { Colors } from '../../../../constants/Colors';
 
 export default function Saude4() {
       const [idade, setIdade]=useState(0);
@@ -179,7 +180,7 @@ export default function Saude4() {
           if(collapseVisible==false){
             return(
                 <View
-                      style={{ ...styles.openButton, backgroundColor: "#5baf8c", borderWidth:1, width:190, alignSelf:'center' }}
+                      style={{ ...styles.openButton, backgroundColor: Colors.VerdeEscuro, borderWidth:1, width:190, alignSelf:'center' }}
                       onTouchEnd={() => {
                         setCollapseVisible(true);
                       }}
@@ -194,7 +195,7 @@ export default function Saude4() {
                   Risco()
                 }
                 <View
-                      style={{ ...styles.openButton, backgroundColor: "#5baf8c", borderWidth:1, width:190, alignSelf:'center' }}
+                      style={{ ...styles.openButton, backgroundColor: Colors.VerdeEscuro, borderWidth:1, width:190, alignSelf:'center' }}
                       onTouchEnd={() => {
                         setCollapseVisible(false);
                       }}

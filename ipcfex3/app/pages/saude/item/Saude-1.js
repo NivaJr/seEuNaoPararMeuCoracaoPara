@@ -10,6 +10,7 @@ import Figura9 from '../../../../assets/images/figura9.png';
 import CustomButton from '../../../../components/voltarbtn';
 import HeaderTerciario from '../../../../components/HeaderTerciario';
 import LineLink from '../../../../components/LineLink';
+import { Colors } from '../../../../constants/Colors';
 
 
 
@@ -120,7 +121,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   header: {
-    backgroundColor: 'green',
+    backgroundColor: Colors.VerdeEscuro,
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',

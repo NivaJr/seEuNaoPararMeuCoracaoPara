@@ -23,7 +23,7 @@ export default function HeaderTerciario({title, pai}){
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: 'green',
+    backgroundColor: Colors.VerdeClaro,
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',

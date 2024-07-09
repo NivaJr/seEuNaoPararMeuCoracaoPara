@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, View} from 'react-native';
-import { FontAwesome5, Ionicons, AntDesign } from '@expo/vector-icons';
+import { FontAwesome5, Ionicons, AntDesign, MaterialCommunityIcons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
+import { Colors } from '../constants/Colors';
 
 export default function Footer({page}){
   
@@ -22,7 +23,7 @@ export default function Footer({page}){
   
   const handleHomeColor = () => {
     if(page === "home"){
-      return "#5fab8c"
+      return Colors.VerdeEscuro
     }else{
       return "gray"
     }
@@ -30,7 +31,7 @@ export default function Footer({page}){
   
   const handleTFMColor = () => {
     if(page === "tfm"){
-      return "#5fab8c"
+      return Colors.VerdeEscuro
     }else{
       return "gray"
     }
@@ -38,7 +39,15 @@ export default function Footer({page}){
   
   const handleSaudeColor = () => {
     if(page === "saude"){
-      return "#5fab8c"
+      return Colors.VerdeEscuro
+    }else{
+      return "gray"
+    }
+  }
+
+  const handleTreinosEspeciaisColor = () => {
+    if(page === "treinosEspeciais"){
+      return Colors.VerdeEscuro
     }else{
       return "gray"
     }
@@ -82,13 +91,25 @@ export default function Footer({page}){
             </Pressable>
         </Link>
     </View>    
+    
+    <View style={styles.bottomIcon}>
+        <Link href="pages/treinosEspeciais" asChild>
+            <Pressable>
+                    <MaterialCommunityIcons 
+                        name="weight-lifter"
+                        size={24} 
+                        color={handleTreinosEspeciaisColor()} 
+                    />    
+            </Pressable>
+        </Link>
+    </View>    
   </View>
   )
 }
 
 const styles = StyleSheet.create({
     bottom: {
-        backgroundColor: 'red',
+        backgroundColor: Colors.VermelhoEscuro,
         position: 'relative',
         bottom: 0,
         left: 0,

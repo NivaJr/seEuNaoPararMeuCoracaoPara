@@ -1,8 +1,8 @@
 export default {
     backgroundColor: '#eeeeee',
     fonte: 'black-ops-one',
-    VerdeEscuro: '#5baf8c',
-    VerdeClaro: '#77d89d',
+    VerdeEscuro: '#047ac5',
+    VerdeClaro: '#038FE6',
     VermelhoClaro: '#e8331a',
     VermelhoEscuro: '#d4101f',
     Branco:'#fafafa',
