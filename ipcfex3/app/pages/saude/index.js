@@ -14,7 +14,6 @@ export default function Saude() {
 
       <View style={styles.middle}>
         <View style={styles.middleContent}>
-          <LineLink title='Treino Veteranos' link='saude/item/Saude-6' icon='saude'/>
           <LineLink title='Avaliação da Composição Corporal' link='saude/item/Saude-1' icon='saude'/>
           <LineLink title='Identificação de Fatores de Risco de Síndrome Metabólica' link='saude/item/Saude-2' icon='saude'/>
           <LineLink title='Verificação de Pressão Arterial' link='saude/item/Saude-3' icon='saude'/>

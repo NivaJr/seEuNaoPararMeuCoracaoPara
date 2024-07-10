@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, StatusBar, Modal, TouchableHighlight, Button, Pressable } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, StatusBar, Modal, TouchableHighlight, Button, Pressable, Image } from 'react-native';
 import { Video } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
 import HeaderTerciario from '../../../../../components/HeaderTerciario';
@@ -53,14 +53,7 @@ export default function Tfm3_4_1() {
           </Modal>
         <View style={styles.div}>
           <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
-          <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/09%20Perdigueiro.jpeg?alt=media&token=fb857f37-351a-480a-9b17-5dee5f98cf2a" }}
-            resizeMode="contain"
-            shouldPlay 
-            isMuted={true}
-            useNativeControls
-            style={{ height: 200 }}
-          />
+          <Image source={require('../../../../../assets/images/09Perdigueiro.jpeg')} style={{height: 200, width: 300, objectFit: 'contain'}}/>
           <View 
             style={{borderTopWidth: 1.5, borderColor: 'gray', paddingTop: 10, 
                     marginTop: 10, display: "flex", gap: 20}}
