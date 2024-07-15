@@ -13,7 +13,7 @@ export default function treinosEspeciais6_1() {
           <ScrollView style={styles.container}>
               <View style={styles.div}>
                 <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15}}>Treino Charlie</Text>
-                <Text style={{padding:15}}>O treinamento do Circuito Charlie poderá ser realizado em qualquer área plana. Por ser uma atividade complementar, o uniforme utilizado será o mesmo da atividade principal que está sendo executada.{'\n'}</Text>
+                <Text style={{padding:15}}>O treino Charlie é um método de treinamento de Circuito em blocos, com exercícios agrupados para o mesmo grupo muscular. Este consiste ao praticante realizar uma série de cada exercício dentro do bloco, com pequenos intervalos entre eles. O praticante avança para o próximo bloco, após três passagens dos exercícios de cada bloco.{'\n'}</Text>
                 <LineLink title='Abraçando as Pernas' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-1" icon='treinosEspeciais'/>
                 <LineLink title='Caminhar com as mãos + Quadril e Tronco' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-2" icon='treinosEspeciais'/>
                 <LineLink title='Polichinelos' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-3" icon='treinosEspeciais'/>

@@ -13,7 +13,7 @@ export default function treinosEspeciais6_1() {
           <ScrollView style={styles.container}>
               <View style={styles.div}>
                 <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15}}>Treino Alfa</Text>
-                <Text style={{padding:15}}>O treinamento do Circuito Alfa poderá ser realizado em qualquer área plana. Por ser uma atividade complementar, o uniforme utilizado será o mesmo da atividade principal que está sendo executada.{'\n'}</Text>
+                <Text style={{padding:15}}>O treino Alfa é um método de treinamento em Circuito. Esse método consiste em realizar uma série de cada exercício com pequenos intervalos entre elas. Ao final do circuito, no último exercício, o intervalo é maior, período de recuperação, sendo sugerido a repetição do circuito, com limite de três passagens.{'\n'}</Text>
                 <LineLink title='Abraçando as Pernas' link="treinosEspeciais/item/treinoA/TreinosEspeciais6-1-1" icon='treinosEspeciais'/>
                 <LineLink title='Sentando nos Calcanhares' link="treinosEspeciais/item/treinoA/TreinosEspeciais6-1-2" icon='treinosEspeciais'/>
                 <LineLink title='Circundação dos Braços' link="treinosEspeciais/item/treinoA/TreinosEspeciais6-1-3" icon='treinosEspeciais'/>
