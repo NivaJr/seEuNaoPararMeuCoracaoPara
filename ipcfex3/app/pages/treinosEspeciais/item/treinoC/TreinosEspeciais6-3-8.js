@@ -21,17 +21,17 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>SUGADO{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>FLEXÃO DE BRAÇOS{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}5 repetições{"\n"}
+                  {"\t"}15 repetições{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Realizar o movimento completo, com duas flexões de braços e sem salto vertical{"\n"}
+                  {"\t"}Realizar a flexão completa com as pernas esticadas{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
@@ -52,9 +52,9 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 2</Text>
           <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/07%20Sugado.mov?alt=media&token=6dd204b3-34e6-4666-90ca-92b08b7b5ec2" }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/05%20Flex%C3%A3o%20de%20bra%C3%A7os.mov?alt=media&token=a74a4ebb-e747-4f49-8c8e-85e4878d1ad6" }}
             resizeMode="contain"
             shouldPlay 
             isMuted={true}
@@ -70,7 +70,7 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                SUGADO
+                FLEXÃO DE BRAÇOS
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>

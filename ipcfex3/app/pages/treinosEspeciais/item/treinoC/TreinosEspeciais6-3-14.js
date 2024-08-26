@@ -12,7 +12,7 @@ export default function Tfm3_4_1() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
-      <HeaderTerciario title='Treino Bravo' pai='treinosEspeciais/item/TreinosEspeciais6-2' />
+      <HeaderTerciario title='Treino Charlie' pai='treinosEspeciais/item/TreinosEspeciais6-3' />
       <ScrollView style={{ flex: 1}}>
         <Modal
             animationType="slide"
@@ -21,7 +21,7 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>MEIO SUGADO{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>ELEVAÇÃO DE QUADRIL UNILATERAL{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
@@ -31,12 +31,12 @@ export default function Tfm3_4_1() {
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Realizar os movimentos de forma integrada e com atenção{"\n"}
+                  {"\t"}Realizar a elevação do quadril com uma das pernas{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
                   <Text>
-                  {"\t"}Abdome contraído e respirando{"\n"}
+                  {"\t"}Abdome contraído e a outra perna esticada{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -52,9 +52,9 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 2</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 3</Text>
           <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/07%20Meio%20sugado.mov?alt=media&token=180b4a93-ab8a-4f04-837a-ee35d07fffe6" }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/11%20Eleva%C3%A7%C3%A3o%20de%20quadril%20unilateral.mov?alt=media&token=3ee9fa4a-f8cc-4c5e-9a5e-8231c29252bc" }}
             resizeMode="contain"
             shouldPlay 
             isMuted={true}
@@ -70,20 +70,20 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                MEIO SUGADO
+                ELEVAÇÃO DE QUADRIL UNILATERAL
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>
             <View style={{ height: '20%',}}>
               <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 10, alignItems: 'center', height: 70}}>
-                <Link href={`pages/treinosEspeciais/item/treinoB/TreinosEspeciais6-2-9`} asChild>
+                <Link href={`pages/treinosEspeciais/item/treinoC/TreinosEspeciais6-3-13`} asChild>
                   <Pressable
                     style={{ ...styles.proxButton }}
                   >
                     <Text style={{ ...styles.proxTextStyle}}>Anterior</Text>
                   </Pressable>
                 </Link>
-                <Link href={`pages/treinosEspeciais/item/treinoB/TreinosEspeciais6-2-11`} asChild>
+                <Link href={`pages/treinosEspeciais/item/treinoC/TreinosEspeciais6-3-15`} asChild>
                   <Pressable
                     style={{ ...styles.proxButton }}
                   >

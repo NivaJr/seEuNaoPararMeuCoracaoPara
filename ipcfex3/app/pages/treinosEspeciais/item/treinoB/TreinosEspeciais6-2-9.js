@@ -52,7 +52,7 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 2</Text>
           <Video
             source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/06%20Agachamento%20Sum%C3%B4.mov?alt=media&token=229bee5b-995d-40db-8e97-feda91a44f8d" }}
             resizeMode="contain"

@@ -12,25 +12,52 @@ export default function treinosEspeciais6_2() {
           <HeaderTerciario title="Treino Bravo" pai='treinosEspeciais/item/TreinosEspeciais-6'/>
           <ScrollView style={styles.container}>
               <View style={styles.div}>
-                <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15}}>Treino Bravo</Text>
+                <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15, fontSize:16}}>Treino Bravo</Text>
                 <Text style={{padding:15}}>O treino Bravo é um método de treinamento de Circuito em blocos. Este consiste ao praticante realizar uma série de cada exercício dentro do bloco, com pequenos intervalos entre eles.{'\n'}
                 O praticante avança para o próximo bloco, após três passagens dos exercícios de cada bloco.{'\n'}</Text>
-                <LineLink title='Abraçando as Pernas' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-1" icon='treinosEspeciais'/>
-                <LineLink title='Mobilidade Quadril e Tronco' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-2" icon='treinosEspeciais'/>
-                <LineLink title='Polichinelos' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-3" icon='treinosEspeciais'/>
-                <LineLink title='Agachamento' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-4" icon='treinosEspeciais'/>
-                <LineLink title='Flexão de Braços' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-5" icon='treinosEspeciais'/>
-                <LineLink title='Afundo' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-6" icon='treinosEspeciais'/>
-                <LineLink title='Prancha Baixa' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-7" icon='treinosEspeciais'/>
-                <LineLink title='Abdominal Supra' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-8" icon='treinosEspeciais'/>
-                <LineLink title='Agachamento Sumô' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-9" icon='treinosEspeciais'/>
-                <LineLink title='Meio Sugado' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-10" icon='treinosEspeciais'/>
-                <LineLink title='Triceps Mergulho(Sofá[Perna Esticada])' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-11" icon='treinosEspeciais'/>
-                <LineLink title='Perdigueiro' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-12" icon='treinosEspeciais'/>
-                <LineLink title='Abdominal Infra' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-13" icon='treinosEspeciais'/>
-                <LineLink title='Elevação de quadril' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-14" icon='treinosEspeciais'/>
-                <LineLink title='Escalador Dinâmico' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-15" icon='treinosEspeciais'/>
-
+                <View style={styles.subdiv}>
+                  <View style={styles.subdivtitle}>
+                    <Text style={styles.subdivtitletext}>Preparação</Text>
+                  </View>
+                  <View>
+                    <LineLink title='Abraçando as Pernas' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-1" icon='treinosEspeciais'/>
+                    <LineLink title='Mobilidade Quadril e Tronco' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-2" icon='treinosEspeciais'/>
+                    <LineLink title='Polichinelos' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-3" icon='treinosEspeciais'/>
+                  </View>
+                </View>
+                <View style={styles.subdiv}>
+                  <View style={styles.subdivtitle}>
+                    <Text style={styles.subdivtitletext}>Bloco 1</Text>
+                  </View>
+                  <View>
+                    <LineLink title='Agachamento' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-4" icon='treinosEspeciais'/>
+                    <LineLink title='Flexão de Braços' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-5" icon='treinosEspeciais'/>
+                    <LineLink title='Afundo' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-6" icon='treinosEspeciais'/>
+                    <LineLink title='Prancha Baixa' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-7" icon='treinosEspeciais'/>
+                  </View>
+                </View>
+                <View style={styles.subdiv}>
+                  <View style={styles.subdivtitle}>
+                    <Text style={styles.subdivtitletext}>Bloco 2</Text>
+                  </View>
+                  <View>
+                    <LineLink title='Abdominal Supra' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-8" icon='treinosEspeciais'/>
+                    <LineLink title='Agachamento Sumô' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-9" icon='treinosEspeciais'/>
+                    <LineLink title='Meio Sugado' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-10" icon='treinosEspeciais'/>
+                    <LineLink title='Triceps Mergulho(Sofá[Perna Esticada])' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-11" icon='treinosEspeciais'/>
+                  </View>
+                </View>
+                <View style={styles.subdiv}>
+                  <View style={styles.subdivtitle}>
+                    <Text style={styles.subdivtitletext}>Bloco 3</Text>
+                  </View>
+                  <View>
+                    <LineLink title='Perdigueiro' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-12" icon='treinosEspeciais'/>
+                    <LineLink title='Abdominal Infra' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-13" icon='treinosEspeciais'/>
+                    <LineLink title='Elevação de quadril' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-14" icon='treinosEspeciais'/>
+                    <LineLink title='Escalador Dinâmico' link="treinosEspeciais/item/treinoB/TreinosEspeciais6-2-15" icon='treinosEspeciais'/>
+                  </View>
+                </View>
               </View>
             </ScrollView>
             <Footer page="treinosEspeciais"/>
@@ -51,6 +78,22 @@ const styles = StyleSheet.create({
     elevation: 1,
     margin:15,
     backgroundColor:'white',
+  },
+  subdiv: {
+    borderRightWidth: 1,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderColor: '#ddd',
+  },
+  subdivtitle: {
+    display: 'flex',
+    alignItems: 'center',
+    borderBottomWidth: 2,
+    backgroundColor: 'rgba(55,66,194, 0.6)'
+  },
+  subdivtitletext: {
+    fontFamily: 'BlackOpsOne_400Regular',
+    fontSize: 22,
   },
   container: {
     flex:1,

@@ -21,22 +21,22 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>TRICEPS MERGULHO{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>ABDOMINAL SUPRA + REMADOR{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}20 repetições{"\n"}
+                  {"\t"}15 repetições{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Apoiado no sofá, realizar o movimento de extensão do cotovelo{"\n"}
+                  {"\t"}Flexão total do troco e de pernas{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
                   <Text>
-                  {"\t"}Realizar a extensão completa dos braços{"\n"}
+                  {"\t"}Soltar o ar na subida{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -52,9 +52,9 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 1</Text>
           <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/06%20Triceps%20mergulho.mov?alt=media&token=0a980b33-a4e4-45d6-9e11-147637c8ae53" }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/04%20Abdominal%20supra%20remador.mov?alt=media&token=381abb1b-f600-4755-9e95-5c90aec63429" }}
             resizeMode="contain"
             shouldPlay 
             isMuted={true}
@@ -70,7 +70,7 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                TRICEPS MERGULHO
+                ABDOMINAL SUPRA + REMADOR
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>

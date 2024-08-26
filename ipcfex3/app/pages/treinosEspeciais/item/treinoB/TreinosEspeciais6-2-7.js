@@ -52,7 +52,7 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 1</Text>
           <Image source={require('../../../../../assets/images/04Pranchabaixa.jpeg')} style={{height: 200, width: 300, objectFit: 'contain'}}/>
           <View 
             style={{borderTopWidth: 1.5, borderColor: 'gray', paddingTop: 10, 

@@ -21,22 +21,22 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>ABDOMINAL SUPRA BRAÇO EXTENDIDO{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>AGACHAMENTO EM 2 TEMPOS{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}20 repetições{"\n"}
+                  {"\t"}15 repetições{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Realizar a flexão do tronco com os braços esticados{"\n"}
+                  {"\t"}Realizar dois movimentos curtos ao final do agachamento{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
                   <Text>
-                  {"\t"}Soltar o ar na subida{"\n"}
+                  {"\t"}Abdome contraído{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -52,9 +52,9 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 3</Text>
           <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/12%20%20Abdominal%20supra%20bra%C3%A7o%20extendido.mov?alt=media&token=75371593-b13f-4f40-8bf9-8f85e20a280b" }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/10%20Agachamento%20em%202%20tempos.mov?alt=media&token=237bfe08-967d-4718-a5fb-a86cd2ac05c1" }}
             resizeMode="contain"
             shouldPlay 
             isMuted={true}
@@ -70,7 +70,7 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                ABDOMINAL SUPRA BRAÇO EXTENDIDO
+                AGACHAMENTO EM 2 TEMPOS
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>
@@ -81,6 +81,13 @@ export default function Tfm3_4_1() {
                     style={{ ...styles.proxButton }}
                   >
                     <Text style={{ ...styles.proxTextStyle}}>Anterior</Text>
+                  </Pressable>
+                </Link>
+                <Link href={`pages/treinosEspeciais/item/treinoC/TreinosEspeciais6-3-14`} asChild>
+                  <Pressable
+                    style={{ ...styles.proxButton }}
+                  >
+                    <Text style={{ ...styles.proxTextStyle}}>Próximo</Text>
                   </Pressable>
                 </Link>
               </View>

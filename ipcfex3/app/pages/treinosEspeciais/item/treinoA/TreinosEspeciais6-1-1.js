@@ -54,7 +54,7 @@ export default function Tfm3_4_1() {
         <View style={styles.div}>
           <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
           <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/01%20Abra%C3%A7ando%20as%20pernas.mov?alt=media&token=4bf08864-ddd0-4134-8467-e6474ad39897" }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/01%20Abra%C3%A7ando%20as%20pernas.mov?alt=media&token=19351af0-d3ac-46b9-9039-2a64ecce644c" }}
             resizeMode="contain"
             shouldPlay 
             isMuted={true}

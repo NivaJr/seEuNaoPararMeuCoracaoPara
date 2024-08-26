@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, StatusBar, Modal, TouchableHighlight, Button, Pressable, Image } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, StatusBar, Modal, TouchableHighlight, Button, Pressable } from 'react-native';
 import { Video } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
 import HeaderTerciario from '../../../../../components/HeaderTerciario';
@@ -21,22 +21,22 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>ISOMETRIA NA PAREDE{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>AGACHAMENTO{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}30s{"\n"}
+                  {"\t"}15 repetições{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Apoiado na parede, realizar o agachamento isométrico{"\n"}
+                  {"\t"}Realizar o agachamento com profundidade máxima, controlando o movimento e a tronco reto{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
                   <Text>
-                  {"\t"}Abdome contraído e joelho a 90º{"\n"}
+                  {"\t"}Abdome contraído e respirado{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -52,8 +52,15 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
-          <Image source={require('../../../../../assets/images/03Isometria.jpeg')} style={{height: 200, width: 300, objectFit: 'contain'}}/>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 1</Text>
+          <Video
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/01%20Agachamento.mov?alt=media&token=a3bb2e21-a621-4eec-9f90-48b521915efc" }}
+            resizeMode="contain"
+            shouldPlay 
+            isMuted={true}
+            useNativeControls
+            style={{ height: 200 }}
+          />
           <View 
             style={{borderTopWidth: 1.5, borderColor: 'gray', paddingTop: 10, 
                     marginTop: 10, display: "flex", gap: 20}}
@@ -63,7 +70,7 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                ISOMETRIA NA PAREDE
+                AGACHAMENTO
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>

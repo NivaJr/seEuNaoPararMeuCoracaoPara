@@ -21,7 +21,7 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>ABDOMINAL INFRA{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>TRICEPS MERGULHO{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
@@ -31,12 +31,12 @@ export default function Tfm3_4_1() {
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Elevação das pernas, descolando o quadril do solo{"\n"}
+                  {"\t"}Apoiado no sofá, realizar o movimento de extensão do cotovelo{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
                   <Text>
-                  {"\t"}Soltar o ar na elevação das pernas{"\n"}
+                  {"\t"}Realizar a extensão completa dos braços{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -52,9 +52,9 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 2</Text>
           <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/08%20Abdominal%20infra.mov?alt=media&token=0a659c83-d7d0-42dc-bb47-7dda0d24a169" }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/06%20Triceps%20mergulho.mov?alt=media&token=0a980b33-a4e4-45d6-9e11-147637c8ae53" }}
             resizeMode="contain"
             shouldPlay 
             isMuted={true}
@@ -70,7 +70,7 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                ABDOMINAL INFRA
+                TRICEPS MERGULHO
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>

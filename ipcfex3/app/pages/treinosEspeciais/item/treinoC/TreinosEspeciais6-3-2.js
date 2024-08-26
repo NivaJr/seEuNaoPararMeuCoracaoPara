@@ -21,22 +21,22 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>CAMINHAR COM AS MÃOS + QUADRIL E TRONCO{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>AFUNDO{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}5 reps cada lado{"\n"}
+                  {"\t"}10 repetições{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Caminhar com as mãos e realizar o giro do tronco, erguendo o braço{"\n"}
+                  {"\t"}Movimento com profundidade e tronco reto{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
                   <Text>
-                  {"\t"}Realizar o movimento naturalmente, olhando para as mãos{"\n"}
+                  {"\t"}Abdome contraído e o joelho próximo ao solo{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -52,9 +52,9 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>PREPARAÇÃO</Text>
           <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/02%20Caminhar%20com%20as%20m%C3%A3os%20%2B%20quadril%20e%20tronco.mov?alt=media&token=ae84065c-1d0e-43b6-9ef0-c1e7fb223887" }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/02%20Afundo.mov?alt=media&token=51b5b7d8-9803-4160-839c-6a42948528a8" }}
             resizeMode="contain"
             shouldPlay 
             isMuted={true}
@@ -70,7 +70,7 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                CAMINHAR COM AS MÃOS + QUADRIL E TRONCO
+                AFUNDO
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>

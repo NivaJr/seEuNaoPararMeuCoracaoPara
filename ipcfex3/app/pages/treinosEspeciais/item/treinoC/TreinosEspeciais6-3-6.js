@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, StatusBar, Modal, TouchableHighlight, Button, Pressable } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, StatusBar, Modal, TouchableHighlight, Button, Pressable, Image } from 'react-native';
 import { Video } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
 import HeaderTerciario from '../../../../../components/HeaderTerciario';
@@ -21,22 +21,22 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>FLEXÃO DE BRAÇOS{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>ISOMETRIA NA PAREDE{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}15 repetições{"\n"}
+                  {"\t"}30s{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Realizar a flexão completa com as pernas esticadas{"\n"}
+                  {"\t"}Apoiado na parede, realizar o agachamento isométrico{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
                   <Text>
-                  {"\t"}Abdome contraído{"\n"}
+                  {"\t"}Abdome contraído e joelho a 90º{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -52,15 +52,8 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
-          <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/05%20Flex%C3%A3o%20de%20bra%C3%A7os.mov?alt=media&token=a74a4ebb-e747-4f49-8c8e-85e4878d1ad6" }}
-            resizeMode="contain"
-            shouldPlay 
-            isMuted={true}
-            useNativeControls
-            style={{ height: 200 }}
-          />
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 1</Text>
+          <Image source={require('../../../../../assets/images/03Isometria.jpeg')} style={{height: 200, width: 300, objectFit: 'contain'}}/>
           <View 
             style={{borderTopWidth: 1.5, borderColor: 'gray', paddingTop: 10, 
                     marginTop: 10, display: "flex", gap: 20}}
@@ -70,7 +63,7 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                FLEXÃO DE BRAÇOS
+                ISOMETRIA NA PAREDE
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>

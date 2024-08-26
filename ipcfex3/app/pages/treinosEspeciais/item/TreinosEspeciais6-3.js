@@ -12,21 +12,55 @@ export default function treinosEspeciais6_1() {
           <HeaderTerciario title="Treino Charlie" pai='treinosEspeciais/item/TreinosEspeciais-6'/>
           <ScrollView style={styles.container}>
               <View style={styles.div}>
-                <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15}}>Treino Charlie</Text>
+                <Text style={{textAlign:'center', fontWeight:'bold', borderBottomWidth:1.5, borderColor:'gray', paddingBottom:10, marginBottom:10, padding:15, fontSize:16}}>Treino Charlie</Text>
                 <Text style={{padding:15}}>O treino Charlie é um método de treinamento de Circuito em blocos, com exercícios agrupados para o mesmo grupo muscular. Este consiste ao praticante realizar uma série de cada exercício dentro do bloco, com pequenos intervalos entre eles. O praticante avança para o próximo bloco, após três passagens dos exercícios de cada bloco.{'\n'}</Text>
-                <LineLink title='Abraçando as Pernas' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-1" icon='treinosEspeciais'/>
-                <LineLink title='Caminhar com as mãos + Quadril e Tronco' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-2" icon='treinosEspeciais'/>
-                <LineLink title='Polichinelos' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-3" icon='treinosEspeciais'/>
-                <LineLink title='Isometria na Parede' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-4" icon='treinosEspeciais'/>
-                <LineLink title='Abdominal Supra + Remador' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-5" icon='treinosEspeciais'/>
-                <LineLink title='Flexão de Braços' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-6" icon='treinosEspeciais'/>
-                <LineLink title='Triceps Mergulho' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-7" icon='treinosEspeciais'/>
-                <LineLink title='Sugado' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-8" icon='treinosEspeciais'/>
-                <LineLink title='Abdominal Infra' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-9" icon='treinosEspeciais'/>
-                <LineLink title='Búlgaro(Sofá)' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-10" icon='treinosEspeciais'/>
-                <LineLink title='Agachamento em 2 Tempos' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-11" icon='treinosEspeciais'/>
-                <LineLink title='Elevação de Quadril Unilateral' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-12" icon='treinosEspeciais'/>
-                <LineLink title='Abdominal Supra Braço Extendido' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-13" icon='treinosEspeciais'/>
+                <View style={styles.subdiv}>
+                  <View style={styles.subdivtitle}>
+                    <Text style={styles.subdivtitletext}>Preparação</Text>
+                  </View>
+                  <View>
+                    <LineLink title='Abraçando as Pernas' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-1" icon='treinosEspeciais'/>
+                    <LineLink title='Afundo' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-2" icon='treinosEspeciais'/>
+                    <LineLink title='Polichinelos' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-3" icon='treinosEspeciais'/>
+                  </View>
+                </View>
+                <View style={styles.subdiv}>
+                  <View style={styles.subdivtitle}>
+                    <Text style={styles.subdivtitletext}>Bloco 1</Text>
+                  </View>
+                  <View>
+                    <LineLink title='Agachamento' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-4" icon='treinosEspeciais'/>
+                    <LineLink title='Caminhar com as mãos + Quadril e Tronco' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-5" icon='treinosEspeciais'/>
+                    <LineLink title='Isometria na Parede' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-6" icon='treinosEspeciais'/>
+                    <LineLink title='Abdominal Supra + Remador' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-7" icon='treinosEspeciais'/>
+                  </View>
+                </View>
+                <View style={styles.subdiv}>
+                  <View style={styles.subdivtitle}>
+                    <Text style={styles.subdivtitletext}>Bloco 2</Text>
+                  </View>
+                  <View>
+                    <LineLink title='Flexão de Braços' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-8" icon='treinosEspeciais'/>
+                    <LineLink title='Triceps Mergulho' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-9" icon='treinosEspeciais'/>
+                    <LineLink title='Sugado' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-10" icon='treinosEspeciais'/>
+                    <LineLink title='Abdominal Infra' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-11" icon='treinosEspeciais'/>                 
+                  </View>
+                </View>
+                <View style={styles.subdiv}>
+                  <View style={styles.subdivtitle}>
+                    <Text style={styles.subdivtitletext}>Bloco 3</Text>
+                  </View>
+                  <View>
+                    <LineLink title='Búlgaro(Sofá)' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-12" icon='treinosEspeciais'/>
+                    <LineLink title='Agachamento em 2 Tempos' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-13" icon='treinosEspeciais'/>
+                    <LineLink title='Elevação de Quadril Unilateral' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-14" icon='treinosEspeciais'/>
+                    <LineLink title='Abdominal Supra Braço Extendido' link="treinosEspeciais/item/treinoC/TreinosEspeciais6-3-15" icon='treinosEspeciais'/>
+                  </View>
+                </View>
+                
+               
+                
+                
 
               </View>
             </ScrollView>
@@ -48,6 +82,22 @@ const styles = StyleSheet.create({
     elevation: 1,
     margin:15,
     backgroundColor:'white',
+  },
+  subdiv: {
+    borderRightWidth: 1,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderColor: '#ddd',
+  },
+  subdivtitle: {
+    display: 'flex',
+    alignItems: 'center',
+    borderBottomWidth: 2,
+    backgroundColor: 'rgba(55,66,194, 0.6)'
+  },
+  subdivtitletext: {
+    fontFamily: 'BlackOpsOne_400Regular',
+    fontSize: 22,
   },
   container: {
     flex:1,

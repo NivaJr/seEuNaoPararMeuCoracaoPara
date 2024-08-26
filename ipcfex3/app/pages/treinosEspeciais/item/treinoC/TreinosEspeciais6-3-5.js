@@ -21,22 +21,22 @@ export default function Tfm3_4_1() {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{ ...styles.modalText }}>ABDOMINAL SUPRA + REMADOR{"\n"}</Text>
+                <Text style={{ ...styles.modalText }}>CAMINHAR COM AS MÃOS + QUADRIL E TRONCO{"\n"}</Text>
                 <ScrollView style={{alignSelf: 'flex-start'}}>
                   <Text style={styles.secondModalText}>TEMPO DE EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}15 repetições{"\n"}
+                  {"\t"}5 reps cada lado{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>CORRETA EXECUÇÃO:
                   </Text>
                   <Text>
-                  {"\t"}Flexão total do troco e de pernas{"\n"}
+                  {"\t"}Caminhar com as mãos e realizar o giro do tronco, erguendo o braço{"\n"}
                   </Text>
                   <Text style={styles.secondModalText}>OBSERVAÇÕES:
                   </Text>
                   <Text>
-                  {"\t"}Soltar o ar na subida{"\n"}
+                  {"\t"}Realizar o movimento naturalmente, olhando para as mãos{"\n"}
                   </Text>
                 </ScrollView>
 
@@ -52,9 +52,9 @@ export default function Tfm3_4_1() {
             </View>
           </Modal>
         <View style={styles.div}>
-          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>DEMONSTRAÇÃO</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 'bold', borderBottomWidth: 1.5, borderColor: 'gray', paddingBottom: 10, marginBottom: 10 }}>BLOCO 1</Text>
           <Video
-            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/04%20Abdominal%20supra%20remador.mov?alt=media&token=381abb1b-f600-4755-9e95-5c90aec63429" }}
+            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/videos-ccfex.appspot.com/o/02%20Caminhar%20com%20as%20m%C3%A3os%20%2B%20quadril%20e%20tronco.mov?alt=media&token=ae84065c-1d0e-43b6-9ef0-c1e7fb223887" }}
             resizeMode="contain"
             shouldPlay 
             isMuted={true}
@@ -70,7 +70,7 @@ export default function Tfm3_4_1() {
               onTouchEnd={() => { setModalVisible(true)}}
             >
               <Text style={{ ...styles.textStyle, fontSize: 17, letterSpacing: 1, color: 'black', flex: 1}}>
-                ABDOMINAL SUPRA + REMADOR
+                CAMINHAR COM AS MÃOS + QUADRIL E TRONCO
               </Text>
               <Ionicons name="information-circle-outline" size={24} color="black" />
             </View>
