@@ -2,7 +2,7 @@
   "expo": {
     "name": "ipcfex3",
     "slug": "ipcfex3",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -12,15 +12,23 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 30000,
+
+      "releaseChannel": "production"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 6,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.imejrjp.ipcfex3"
+      "package": "com.tfmsaudeipcfex.app"
     },
     "web": {
       "bundler": "metro",
