@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "ipcfex3",
-    "slug": "ipcfex3",
-    "version": "2.0.0",
+    "name": "IPCFEX: TFM e SAÚDE",
+    "slug": "IPCFEX_TFM_e_SAUDE",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -16,14 +16,14 @@
       "enabled": true,
       "checkAutomatically": "ON_LOAD",
       "fallbackToCacheTimeout": 30000,
-
       "releaseChannel": "production"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 6,
+      "versionCode": 9,
+      "targetSdkVersion": 34,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
@@ -46,7 +46,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "d0ca171c-6897-4205-a453-8717d9c839c5"
+        "projectId": "03368543-6ec5-49f6-a8e4-64404a96098e"
       }
     }
   }
