@@ -45,7 +45,7 @@ export default function Saude1_2() {
                     <Text style={styles.textStyle}>MOSTRAR RESULTADO</Text>
                   </View>
           );
-        }else{
+        } else{
           return(
             <View>
               <StatusBar hidden={true} />
@@ -81,7 +81,7 @@ export default function Saude1_2() {
                     <SafeAreaView style={{width:'100%', flex:1, flexDirection:'column'}}>
                       <TextInput
                         style={styles.input}
-                        onChangeText={text => Calc(parseFloat(text),1)}
+                        onChangeText={text => Calc(parseFloat(text.replace(',', '.')),1)}
                         placeholder="massa"
                         keyboardType="numeric"
                       />
@@ -93,7 +93,7 @@ export default function Saude1_2() {
                     <SafeAreaView style={{width:'100%', flex:1, flexDirection:'column'}}>
                       <TextInput
                         style={styles.input}
-                        onChangeText={text => Calc(parseFloat(text),2)}
+                        onChangeText={text => Calc(parseFloat(text.replace(',', '.')),2)}
                         placeholder="estatura"
                         keyboardType="numeric"
                       />
