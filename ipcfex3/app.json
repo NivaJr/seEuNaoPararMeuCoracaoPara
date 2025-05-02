@@ -2,7 +2,7 @@
   "expo": {
     "name": "IPCFEX: TFM e SAÚDE",
     "slug": "IPCFEX_TFM_e_SAUDE",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -22,7 +22,7 @@
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 9,
+      "versionCode": 10,
       "targetSdkVersion": 34,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
